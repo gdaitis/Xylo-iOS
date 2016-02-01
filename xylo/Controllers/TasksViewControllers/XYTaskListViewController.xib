@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYTaskListViewController">
+            <connections>
+                <outlet property="tableView" destination="bEc-KM-eWe" id="Z84-3o-Cq3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bEc-KM-eWe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5r9-Sm-6h7"/>
+                        <outlet property="delegate" destination="-1" id="nWZ-Ek-h53"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxC-3h-bf5">
+                    <rect key="frame" x="244" y="505" width="65" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="6WB-Za-eaF"/>
+                        <constraint firstAttribute="height" constant="65" id="hXd-Ls-TMR"/>
+                    </constraints>
+                    <state key="normal" image="TaskAddButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fxC-3h-bf5" secondAttribute="bottom" constant="-2" id="D74-If-vDf"/>
+                <constraint firstItem="bEc-KM-eWe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DOg-Dk-X1C"/>
+                <constraint firstAttribute="bottom" secondItem="bEc-KM-eWe" secondAttribute="bottom" id="cuf-5J-QuT"/>
+                <constraint firstAttribute="trailing" secondItem="fxC-3h-bf5" secondAttribute="trailing" constant="11" id="ruO-uu-9bg"/>
+                <constraint firstAttribute="trailing" secondItem="bEc-KM-eWe" secondAttribute="trailing" id="ttP-sR-tSl"/>
+                <constraint firstItem="bEc-KM-eWe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wuJ-q8-cDe"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TaskAddButton" width="45" height="45"/>
+    </resources>
+</document>

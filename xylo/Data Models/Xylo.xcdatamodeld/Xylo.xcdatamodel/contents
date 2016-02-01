@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="XYEnsemble" representedClassName="XYEnsemble" syncable="YES">
+        <attribute name="coverImageUrl" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="CoverImage"/>
+            </userInfo>
+        </attribute>
+        <attribute name="ensembleID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Facebook"/>
+            </userInfo>
+        </attribute>
+        <attribute name="instagram" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Instagram"/>
+            </userInfo>
+        </attribute>
+        <attribute name="logoImageUrl" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="LogoImage"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Phone"/>
+            </userInfo>
+        </attribute>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Twitter"/>
+            </userInfo>
+        </attribute>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Website"/>
+            </userInfo>
+        </attribute>
+        <attribute name="youtube" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Youtube"/>
+            </userInfo>
+        </attribute>
+        <relationship name="ensembleType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="XYEnsembleType" inverseName="ensemble" inverseEntity="XYEnsembleType" syncable="YES"/>
+        <relationship name="instrumentTypes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYInstrumentType" inverseName="ensembles" inverseEntity="XYInstrumentType" syncable="YES"/>
+        <relationship name="parentOrganization" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="XYOrganization" inverseName="ensembles" inverseEntity="XYOrganization" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="ParentOrganizationId"/>
+                <entry key="relatedByAttribute" value="organizationID"/>
+            </userInfo>
+        </relationship>
+        <relationship name="positions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYPosition" inverseName="ensemble" inverseEntity="XYPosition" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYUser" inverseName="ensembles" inverseEntity="XYUser" syncable="YES"/>
+    </entity>
+    <entity name="XYEnsembleType" representedClassName="XYEnsembleType" syncable="YES">
+        <attribute name="ensembleTypeID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ensembleTypeName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ensemble" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYEnsemble" inverseName="ensembleType" inverseEntity="XYEnsemble" syncable="YES"/>
+    </entity>
+    <entity name="XYInstrumentType" representedClassName="XYInstrumentType" syncable="YES">
+        <attribute name="hsNumber" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="HSNumber"/>
+            </userInfo>
+        </attribute>
+        <attribute name="instrumentFamilyId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="InstrumentFamilyId"/>
+            </userInfo>
+        </attribute>
+        <attribute name="instrumentGroupId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="InstrumentGroupId"/>
+            </userInfo>
+        </attribute>
+        <attribute name="instrumentTypeId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="synonyms" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Synonyms"/>
+            </userInfo>
+        </attribute>
+        <relationship name="ensembles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYEnsemble" inverseName="instrumentTypes" inverseEntity="XYEnsemble" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYUser" inverseName="userPlayedInstrumentTypes" inverseEntity="XYUser" syncable="YES"/>
+    </entity>
+    <entity name="XYOrganization" representedClassName="XYOrganization" syncable="YES">
+        <attribute name="boosters" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coverImageUrl" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="CoverImageUrl"/>
+            </userInfo>
+        </attribute>
+        <attribute name="director" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Facebook"/>
+            </userInfo>
+        </attribute>
+        <attribute name="firstAddress" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="FirstAddress"/>
+            </userInfo>
+        </attribute>
+        <attribute name="instagram" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Instagram"/>
+            </userInfo>
+        </attribute>
+        <attribute name="logoImageUrl" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="LogoImageUrl"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="organizationID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Phone"/>
+            </userInfo>
+        </attribute>
+        <attribute name="soundcloud" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Soundcloud"/>
+            </userInfo>
+        </attribute>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Twitter"/>
+            </userInfo>
+        </attribute>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Website"/>
+            </userInfo>
+        </attribute>
+        <attribute name="youtube" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="YouTube"/>
+            </userInfo>
+        </attribute>
+        <relationship name="ensembles" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="XYEnsemble" inverseName="parentOrganization" inverseEntity="XYEnsemble" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Ensembles"/>
+            </userInfo>
+        </relationship>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYUser" inverseName="organizations" inverseEntity="XYUser" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Members"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="XYPosition" representedClassName="XYPosition" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Name"/>
+                <entry key="mappedKeyName.1" value="OrganizationName"/>
+            </userInfo>
+        </attribute>
+        <attribute name="positionID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="ensemble" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="XYEnsemble" inverseName="positions" inverseEntity="XYEnsemble" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="ensembleID"/>
+            </userInfo>
+        </relationship>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYUser" inverseName="positions" inverseEntity="XYUser" syncable="YES"/>
+    </entity>
+    <entity name="XYTask" representedClassName="XYTask" syncable="YES">
+        <attribute name="dueDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isMarked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isRecurring" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repeat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="runAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shouldBeDeleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="taskDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="asignedTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="XYUser" inverseName="asignedTasks" inverseEntity="XYUser" syncable="YES"/>
+    </entity>
+    <entity name="XYUser" representedClassName="XYUser" syncable="YES">
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coverImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Email"/>
+            </userInfo>
+        </attribute>
+        <attribute name="firstAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="FirstName"/>
+            </userInfo>
+        </attribute>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="FullName"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="LastName"/>
+            </userInfo>
+        </attribute>
+        <attribute name="logoImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobilePhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Tel"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="Id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="UserName"/>
+            </userInfo>
+        </attribute>
+        <relationship name="asignedTasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYTask" inverseName="asignedTo" inverseEntity="XYTask" syncable="YES"/>
+        <relationship name="ensembles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYEnsemble" inverseName="users" inverseEntity="XYEnsemble" syncable="YES"/>
+        <relationship name="organizations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYOrganization" inverseName="users" inverseEntity="XYOrganization" syncable="YES"/>
+        <relationship name="positions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYPosition" inverseName="users" inverseEntity="XYPosition" syncable="YES"/>
+        <relationship name="userPlayedInstrumentTypes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="XYInstrumentType" inverseName="users" inverseEntity="XYInstrumentType" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="XYEnsemble" positionX="-650" positionY="-333" width="128" height="268"/>
+        <element name="XYEnsembleType" positionX="-459" positionY="-270" width="128" height="88"/>
+        <element name="XYInstrumentType" positionX="-443" positionY="72" width="128" height="163"/>
+        <element name="XYOrganization" positionX="-803" positionY="-393" width="128" height="285"/>
+        <element name="XYPosition" positionX="-623" positionY="-0" width="128" height="105"/>
+        <element name="XYTask" positionX="-621" positionY="126" width="128" height="208"/>
+        <element name="XYUser" positionX="-990" positionY="-99" width="128" height="298"/>
+    </elements>
+</model>

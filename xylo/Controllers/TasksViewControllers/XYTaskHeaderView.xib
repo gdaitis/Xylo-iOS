@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XYTaskHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllEnsemblesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fXt-gY-9gB">
+                    <rect key="frame" x="8" y="16" width="20" height="14"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="P1n-Wn-mGV"/>
+                        <constraint firstAttribute="height" constant="14" id="epZ-wy-7Qj"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UpAndDownArrowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0cK-qd-jcI">
+                    <rect key="frame" x="296" y="18" width="7" height="10"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="7" id="BVp-Nr-u88"/>
+                        <constraint firstAttribute="height" constant="10" id="VnG-Ev-UoN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All ensembles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WX-kt-XpK">
+                    <rect key="frame" x="36" y="12" width="252" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WWm-93-Pga"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dk-B5-MRn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.3529411764705882" green="0.45490196078431372" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ym8-oY-Obg"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVC-py-uwy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="06i-6o-JbU"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.52156862745098043" green="0.63137254901960782" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3dk-B5-MRn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1DR-vn-nxj"/>
+                <constraint firstItem="fXt-gY-9gB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9Zo-JM-CXG"/>
+                <constraint firstItem="0cK-qd-jcI" firstAttribute="top" secondItem="3dk-B5-MRn" secondAttribute="bottom" constant="17" id="9qk-Oc-4Tc"/>
+                <constraint firstItem="3dk-B5-MRn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OKu-18-8MO"/>
+                <constraint firstAttribute="trailing" secondItem="0cK-qd-jcI" secondAttribute="trailing" constant="17" id="YZS-M4-on1"/>
+                <constraint firstAttribute="trailing" secondItem="EVC-py-uwy" secondAttribute="trailing" id="b0b-f4-U7b"/>
+                <constraint firstItem="0cK-qd-jcI" firstAttribute="leading" secondItem="5WX-kt-XpK" secondAttribute="trailing" constant="8" id="euI-7h-cjh"/>
+                <constraint firstItem="5WX-kt-XpK" firstAttribute="leading" secondItem="fXt-gY-9gB" secondAttribute="trailing" constant="8" id="gim-kk-jc0"/>
+                <constraint firstItem="5WX-kt-XpK" firstAttribute="top" secondItem="3dk-B5-MRn" secondAttribute="bottom" constant="11" id="hfC-Ry-zDe"/>
+                <constraint firstItem="EVC-py-uwy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ncx-nY-Skh"/>
+                <constraint firstItem="fXt-gY-9gB" firstAttribute="top" secondItem="3dk-B5-MRn" secondAttribute="bottom" constant="15" id="nw1-fk-9LF"/>
+                <constraint firstItem="EVC-py-uwy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r7X-Hx-NAN"/>
+                <constraint firstAttribute="trailing" secondItem="3dk-B5-MRn" secondAttribute="trailing" id="scI-Kb-Waf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AllEnsemblesIcon" width="21" height="14"/>
+        <image name="UpAndDownArrowIcon" width="7" height="10"/>
+    </resources>
+</document>

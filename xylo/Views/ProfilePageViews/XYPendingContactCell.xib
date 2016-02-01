@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XYPendingContactCellID" id="H17-ng-A6V" customClass="XYPendingContactCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H17-ng-A6V" id="6jv-Yr-FXp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gle-u6-qlO">
+                        <rect key="frame" x="281" y="10" width="29" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="FG5-3H-gun"/>
+                            <constraint firstAttribute="height" constant="27" id="ZI3-x1-kHc"/>
+                        </constraints>
+                        <state key="normal" image="ProfilePageDeclineIcon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv0-MR-MsQ">
+                        <rect key="frame" x="245" y="11" width="29" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="SaP-v3-FEO"/>
+                            <constraint firstAttribute="width" constant="29" id="cvK-R5-gLD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" image="ProfilePageAcceptIcon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUx-Mq-6F6">
+                        <rect key="frame" x="209" y="11" width="29" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="JGa-b3-LMu"/>
+                            <constraint firstAttribute="height" constant="27" id="tdN-pH-H8W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" image="ProfilePageMessageIcon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DemoAccountImage" translatesAutoresizingMaskIntoConstraints="NO" id="Cvm-za-7dY">
+                        <rect key="frame" x="10" y="7" width="35" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="AIL-J3-7Fg"/>
+                            <constraint firstAttribute="width" constant="35" id="fbA-da-dCB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aliya Mehra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrZ-O0-iHz">
+                        <rect key="frame" x="53" y="7" width="148" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrument" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rc-u2-88d">
+                        <rect key="frame" x="53" y="28" width="148" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wv0-MR-MsQ" firstAttribute="leading" secondItem="LUx-Mq-6F6" secondAttribute="trailing" constant="7" id="3wS-3X-rzA"/>
+                    <constraint firstItem="RrZ-O0-iHz" firstAttribute="top" secondItem="6jv-Yr-FXp" secondAttribute="top" constant="7" id="83A-KJ-PB9"/>
+                    <constraint firstItem="RrZ-O0-iHz" firstAttribute="leading" secondItem="Cvm-za-7dY" secondAttribute="trailing" constant="8" id="BUA-uz-Fbm"/>
+                    <constraint firstItem="wv0-MR-MsQ" firstAttribute="top" secondItem="6jv-Yr-FXp" secondAttribute="top" constant="11" id="D3H-fK-4zT"/>
+                    <constraint firstItem="LUx-Mq-6F6" firstAttribute="leading" secondItem="8rc-u2-88d" secondAttribute="trailing" constant="8" id="Fhv-9z-o3d"/>
+                    <constraint firstAttribute="trailing" secondItem="Gle-u6-qlO" secondAttribute="trailing" constant="10" id="Jhw-cu-ld4"/>
+                    <constraint firstAttribute="bottom" secondItem="8rc-u2-88d" secondAttribute="bottom" constant="7" id="Klx-KR-i9M"/>
+                    <constraint firstItem="8rc-u2-88d" firstAttribute="leading" secondItem="Cvm-za-7dY" secondAttribute="trailing" constant="8" id="QOL-RN-lbs"/>
+                    <constraint firstItem="LUx-Mq-6F6" firstAttribute="top" secondItem="6jv-Yr-FXp" secondAttribute="top" constant="11" id="a9n-xZ-Ppt"/>
+                    <constraint firstItem="Gle-u6-qlO" firstAttribute="leading" secondItem="wv0-MR-MsQ" secondAttribute="trailing" constant="7" id="eBF-Rj-7jH"/>
+                    <constraint firstItem="Cvm-za-7dY" firstAttribute="top" secondItem="6jv-Yr-FXp" secondAttribute="top" constant="7" id="g3c-63-GdG"/>
+                    <constraint firstItem="Gle-u6-qlO" firstAttribute="top" secondItem="6jv-Yr-FXp" secondAttribute="top" constant="10" id="odW-qJ-rV6"/>
+                    <constraint firstItem="Cvm-za-7dY" firstAttribute="leading" secondItem="6jv-Yr-FXp" secondAttribute="leading" constant="10" id="qro-ao-hoB"/>
+                    <constraint firstItem="LUx-Mq-6F6" firstAttribute="leading" secondItem="RrZ-O0-iHz" secondAttribute="trailing" constant="8" id="u7F-l8-TyD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptButton" destination="wv0-MR-MsQ" id="18v-BY-2QR"/>
+                <outlet property="contactImageView" destination="Cvm-za-7dY" id="oyl-8G-xF6"/>
+                <outlet property="declineButton" destination="Gle-u6-qlO" id="qf4-JG-J2A"/>
+                <outlet property="instrumentLabel" destination="8rc-u2-88d" id="ggV-ib-Fie"/>
+                <outlet property="messageButton" destination="LUx-Mq-6F6" id="A9i-7b-zoW"/>
+                <outlet property="nameLabel" destination="RrZ-O0-iHz" id="HYf-uS-oi7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DemoAccountImage" width="35" height="35"/>
+        <image name="ProfilePageAcceptIcon" width="29" height="27"/>
+        <image name="ProfilePageDeclineIcon" width="29" height="27"/>
+        <image name="ProfilePageMessageIcon" width="29" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,1350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B0138A218C4B60E009D4FC0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0138A118C4B60E009D4FC0 /* QuartzCore.framework */; };
+		7B0138A518C4C4D4009D4FC0 /* XYRegistrationNextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0138A418C4C4D4009D4FC0 /* XYRegistrationNextButton.m */; };
+		7B435CD21963F88D00DA0467 /* XYBaseLoggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B435CD11963F88D00DA0467 /* XYBaseLoggedInViewController.m */; };
+		7B4849D1193CC2FB006C9982 /* XYNewPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4849D0193CC2FB006C9982 /* XYNewPasswordViewController.m */; };
+		7B6E73E618ED9BAC0012F111 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E73E518ED9BAC0012F111 /* OpenSans-Light.ttf */; };
+		7B6E73E718ED9BAC0012F111 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E73E518ED9BAC0012F111 /* OpenSans-Light.ttf */; };
+		7B79FFA5191B912500B9C3F9 /* XYLeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B79FFA4191B912500B9C3F9 /* XYLeftMenuTableViewCell.m */; };
+		7B8AC06418F536A100BBA5C9 /* XYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AC06218F536A100BBA5C9 /* XYRootViewController.m */; };
+		7B8AC06518F536A100BBA5C9 /* XYRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8AC06318F536A100BBA5C9 /* XYRootViewController.xib */; };
+		7B8AC06A18F5373500BBA5C9 /* XYLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AC06818F5373500BBA5C9 /* XYLeftMenuViewController.m */; };
+		7B8AC06B18F5373500BBA5C9 /* XYLeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8AC06918F5373500BBA5C9 /* XYLeftMenuViewController.xib */; };
+		7B8AC07018F53A7500BBA5C9 /* XYActivityFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AC06E18F53A7500BBA5C9 /* XYActivityFeedViewController.m */; };
+		7B8AC07118F53A7500BBA5C9 /* XYActivityFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8AC06F18F53A7500BBA5C9 /* XYActivityFeedViewController.xib */; };
+		7BAEE9371938BABB004C7297 /* XYPasswordResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAEE9361938BABB004C7297 /* XYPasswordResetViewController.m */; };
+		7BAEE93A1938C7B5004C7297 /* UIView+viewRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAEE9391938C7B5004C7297 /* UIView+viewRecursion.m */; };
+		7BD155A71906855B00DE8C37 /* XYLoggedInNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD155A61906855B00DE8C37 /* XYLoggedInNavigationViewController.m */; };
+		7BECB8F718EC3042001B704A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BECB8F618EC3042001B704A /* OpenSans-Regular.ttf */; };
+		7BECB8F818EC3042001B704A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BECB8F618EC3042001B704A /* OpenSans-Regular.ttf */; };
+		7BECB8FB18EC30FF001B704A /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BECB8FA18EC30FF001B704A /* OpenSans-Bold.ttf */; };
+		7BECB8FC18EC30FF001B704A /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BECB8FA18EC30FF001B704A /* OpenSans-Bold.ttf */; };
+		80123F8118D1AB2C0033E5B4 /* XYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 80123F8018D1AB2C0033E5B4 /* XYUtils.m */; };
+		80123F8418D1D4E90033E5B4 /* XYVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 80123F8318D1D4E90033E5B4 /* XYVerificationTextField.m */; };
+		80123F8718D1F9460033E5B4 /* XYAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 80123F8618D1F9460033E5B4 /* XYAPIClient.m */; };
+		80123F8B18D31B8A0033E5B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80123F8A18D31B8A0033E5B4 /* Images.xcassets */; };
+		80123F8F18D339560033E5B4 /* JSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 80123F8E18D339560033E5B4 /* JSONResponseSerializerWithData.m */; };
+		80172B7019AC7C3700576386 /* XYTaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B6E19AC7C3700576386 /* XYTaskListViewController.m */; };
+		80172B7119AC7C3700576386 /* XYTaskListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80172B6F19AC7C3700576386 /* XYTaskListViewController.xib */; };
+		80172B7519AC800C00576386 /* XYTaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B7319AC800C00576386 /* XYTaskListCell.m */; };
+		80172B7619AC800C00576386 /* XYTaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80172B7419AC800C00576386 /* XYTaskListCell.xib */; };
+		80172B7919AC80D500576386 /* XYTaskListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B7819AC80D500576386 /* XYTaskListModel.m */; };
+		80172B7C19ACA8B600576386 /* XYTaskService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B7B19ACA8B600576386 /* XYTaskService.m */; };
+		80172B7F19ACAE7B00576386 /* XYEnsembleType.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B7E19ACAE7B00576386 /* XYEnsembleType.m */; };
+		80172B8219ACAE7B00576386 /* XYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B8119ACAE7B00576386 /* XYUser.m */; };
+		80172B8519ACAE7B00576386 /* XYOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B8419ACAE7B00576386 /* XYOrganization.m */; };
+		80172B8819ACAE7B00576386 /* XYEnsemble.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B8719ACAE7B00576386 /* XYEnsemble.m */; };
+		80172B8B19ACAE7B00576386 /* XYInstrumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B8A19ACAE7B00576386 /* XYInstrumentType.m */; };
+		80172B9119ACAE7C00576386 /* XYPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B9019ACAE7C00576386 /* XYPosition.m */; };
+		80172B9419ACB0DC00576386 /* XYTask+TaskFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B9319ACB0DC00576386 /* XYTask+TaskFunctions.m */; };
+		80172B9A19B096FC00576386 /* XYTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B9919B096FC00576386 /* XYTask.m */; };
+		80172B9D19B0B5FB00576386 /* XYTaskHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80172B9C19B0B5FB00576386 /* XYTaskHeaderView.m */; };
+		80172B9F19B0B60900576386 /* XYTaskHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80172B9E19B0B60900576386 /* XYTaskHeaderView.xib */; };
+		802EB56318FD258D000F0701 /* XYOrganizationSocialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 802EB56218FD258D000F0701 /* XYOrganizationSocialCell.m */; };
+		802EB56518FD25A0000F0701 /* XYOrganizationSocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802EB56418FD25A0000F0701 /* XYOrganizationSocialCell.xib */; };
+		802EB56818FD620F000F0701 /* XYPendingContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 802EB56718FD620F000F0701 /* XYPendingContactCell.m */; };
+		802EB56A18FD6223000F0701 /* XYPendingContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802EB56918FD6223000F0701 /* XYPendingContactCell.xib */; };
+		802EB56D18FD7D1E000F0701 /* XYOrganizationMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 802EB56C18FD7D1E000F0701 /* XYOrganizationMemberCell.m */; };
+		802EB56F18FD7D30000F0701 /* XYOrganizationMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802EB56E18FD7D30000F0701 /* XYOrganizationMemberCell.xib */; };
+		80476667191A67B300A13859 /* XYUser+UserFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 80476666191A67B300A13859 /* XYUser+UserFunctions.m */; };
+		8047666B191BB03F00A13859 /* XYEnsembleSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80476669191BB03F00A13859 /* XYEnsembleSelectionViewController.m */; };
+		8047666C191BB03F00A13859 /* XYEnsembleSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8047666A191BB03F00A13859 /* XYEnsembleSelectionViewController.xib */; };
+		8055B37218C479EE0095F4DE /* XYEnterCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8055B37018C479EE0095F4DE /* XYEnterCodeViewController.m */; };
+		8055B37318C479EE0095F4DE /* XYEnterCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8055B37118C479EE0095F4DE /* XYEnterCodeViewController.xib */; };
+		8055B38218C47AAC0095F4DE /* XYConfirmOrganizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8055B38018C47AAC0095F4DE /* XYConfirmOrganizationViewController.m */; };
+		8055B38318C47AAC0095F4DE /* XYConfirmOrganizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8055B38118C47AAC0095F4DE /* XYConfirmOrganizationViewController.xib */; };
+		8055B38D18C47BB10095F4DE /* XYPersonalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8055B38B18C47BB10095F4DE /* XYPersonalInformationViewController.m */; };
+		8055B38E18C47BB10095F4DE /* XYPersonalInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8055B38C18C47BB10095F4DE /* XYPersonalInformationViewController.xib */; };
+		8055B3A318C721C00095F4DE /* XYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8055B3A218C721C00095F4DE /* XYTextField.m */; };
+		805E681B19541E51009B0AE9 /* XYInstrumentType+InstrumentTypeFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 805E681A19541E51009B0AE9 /* XYInstrumentType+InstrumentTypeFunctions.m */; };
+		805E681E19547B08009B0AE9 /* XYInstrumentTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 805E681D19547B08009B0AE9 /* XYInstrumentTypeButton.m */; };
+		8062E74B18DAE0ED004E5A76 /* XYEnsembleSelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8062E74A18DAE0ED004E5A76 /* XYEnsembleSelectionButton.m */; };
+		8065FD2518E428CA00659840 /* XYEnsembleSelectionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8065FD2418E428CA00659840 /* XYEnsembleSelectionScrollView.m */; };
+		806BEA9C18FE7821002DD18C /* XYEnsembleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BEA9A18FE7821002DD18C /* XYEnsembleViewController.m */; };
+		806BEA9D18FE7821002DD18C /* XYEnsembleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 806BEA9B18FE7821002DD18C /* XYEnsembleViewController.xib */; };
+		8073EBFA1920BBE900A4AF3F /* XYEnsembleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8073EBF91920BBE900A4AF3F /* XYEnsembleService.m */; };
+		8073EC261922331D00A4AF3F /* XYPosition+PositionFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8073EC251922331D00A4AF3F /* XYPosition+PositionFunctions.m */; };
+		8075B67818F4110000238645 /* XYBaseProfilePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075B67718F4110000238645 /* XYBaseProfilePageController.m */; };
+		8075B67C18F4114200238645 /* XYOrganizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075B67A18F4114200238645 /* XYOrganizationViewController.m */; };
+		8075B67D18F4114200238645 /* XYOrganizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8075B67B18F4114200238645 /* XYOrganizationViewController.xib */; };
+		8075B68318F417F400238645 /* XYOrganizationProfileHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075B68218F417F400238645 /* XYOrganizationProfileHeader.m */; };
+		8075B68518F4181600238645 /* XYOrganizationProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8075B68418F4181600238645 /* XYOrganizationProfileHeader.xib */; };
+		8075B68818F54E2B00238645 /* XYOrganizationContactInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075B68718F54E2B00238645 /* XYOrganizationContactInfoCell.m */; };
+		8075B68A18F5528500238645 /* XYOrganizationContactInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8075B68918F5528500238645 /* XYOrganizationContactInfoCell.xib */; };
+		8075B68D18F5604C00238645 /* XYOrganizationEnsembleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075B68C18F5604C00238645 /* XYOrganizationEnsembleCell.m */; };
+		8075B68F18F560E300238645 /* XYOrganizationEnsembleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8075B68E18F560E300238645 /* XYOrganizationEnsembleCell.xib */; };
+		8075B69118F5802200238645 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8075B69018F5802200238645 /* OpenSans-Semibold.ttf */; };
+		8080422C190E3ADD006A4378 /* XYOrganizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080422B190E3ADD006A4378 /* XYOrganizationService.m */; };
+		8080422F190E7823006A4378 /* XYOrganization+OrganizationFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080422E190E7823006A4378 /* XYOrganization+OrganizationFunctions.m */; };
+		8080423E190E81CC006A4378 /* XYEnsemble+EnsembleFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080423D190E81CC006A4378 /* XYEnsemble+EnsembleFunctions.m */; };
+		80804242190E8575006A4378 /* NSDictionary+NullConverver.m in Sources */ = {isa = PBXBuildFile; fileRef = 80804241190E8575006A4378 /* NSDictionary+NullConverver.m */; };
+		8081AE9519012C7A0095456E /* XYEnsembleProfileHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8081AE9419012C7A0095456E /* XYEnsembleProfileHeader.m */; };
+		8081AE9719012CD60095456E /* XYEnsembleProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8081AE9619012CD60095456E /* XYEnsembleProfileHeader.xib */; };
+		80AB731D18BB49EB00CC2B39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB731C18BB49EB00CC2B39 /* Foundation.framework */; };
+		80AB731F18BB49EB00CC2B39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB731E18BB49EB00CC2B39 /* CoreGraphics.framework */; };
+		80AB732118BB49EB00CC2B39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB732018BB49EB00CC2B39 /* UIKit.framework */; };
+		80AB732718BB49EB00CC2B39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80AB732518BB49EB00CC2B39 /* InfoPlist.strings */; };
+		80AB732918BB49EB00CC2B39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AB732818BB49EB00CC2B39 /* main.m */; };
+		80AB732D18BB49EB00CC2B39 /* XYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AB732C18BB49EB00CC2B39 /* XYAppDelegate.m */; };
+		80AB733C18BB49EC00CC2B39 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB733B18BB49EC00CC2B39 /* XCTest.framework */; };
+		80AB733D18BB49EC00CC2B39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB731C18BB49EB00CC2B39 /* Foundation.framework */; };
+		80AB733E18BB49EC00CC2B39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB732018BB49EB00CC2B39 /* UIKit.framework */; };
+		80AB734618BB49EC00CC2B39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80AB734418BB49EC00CC2B39 /* InfoPlist.strings */; };
+		80AB734818BB49EC00CC2B39 /* xyloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AB734718BB49EC00CC2B39 /* xyloTests.m */; };
+		80AB736518BB62CD00CC2B39 /* Xylo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80AB736318BB62CD00CC2B39 /* Xylo.xcdatamodeld */; };
+		80AB736818BB630B00CC2B39 /* XYLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AB736718BB630B00CC2B39 /* XYLoginService.m */; };
+		80AB736B18BB639A00CC2B39 /* XYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AB736A18BB639A00CC2B39 /* XYBaseViewController.m */; };
+		80BF5F73196422D30036F300 /* XYOrganizationsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BF5F72196422D30036F300 /* XYOrganizationsListModel.m */; };
+		80C52139195D85A60062E1A9 /* XYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C52137195D85A60062E1A9 /* XYLoginViewController.m */; };
+		80C5213A195D85A60062E1A9 /* XYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C52138195D85A60062E1A9 /* XYLoginViewController.xib */; };
+		80CBC20118D7140C00D43A93 /* XYErrorService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CBC20018D7140C00D43A93 /* XYErrorService.m */; };
+		80D7FF1219459C63006C0979 /* XYBaseRightArrowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D7FF0F19459C63006C0979 /* XYBaseRightArrowButton.m */; };
+		80D7FF1319459C63006C0979 /* XYPositionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D7FF1119459C63006C0979 /* XYPositionButton.m */; };
+		80DF4B1819B74D83003700AE /* XYTaskDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DF4B1619B74D83003700AE /* XYTaskDescriptionCell.m */; };
+		80DF4B1919B74D83003700AE /* XYTaskDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DF4B1719B74D83003700AE /* XYTaskDescriptionCell.xib */; };
+		80DF4B1C19B84E0F003700AE /* XYNavigationBarBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DF4B1B19B84E0F003700AE /* XYNavigationBarBackButton.m */; };
+		80DF4B1E19B84E2F003700AE /* XYNavigationBarBackButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DF4B1D19B84E2F003700AE /* XYNavigationBarBackButton.xib */; };
+		80DF4B2019B85ABC003700AE /* XYNavigationBarEditButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DF4B1F19B85ABC003700AE /* XYNavigationBarEditButton.xib */; };
+		80DF4B2319B85ACF003700AE /* XYNavigationBarEditButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DF4B2219B85ACF003700AE /* XYNavigationBarEditButton.m */; };
+		80E2DC1E18BB854B00640A3D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2DC1A18BB854B00640A3D /* libGoogleAnalyticsServices.a */; };
+		80E2DC1F18BB854B00640A3D /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E2DC1D18BB854B00640A3D /* UIView+NibLoading.m */; };
+		80E2DC2118BB875E00640A3D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2DC2018BB875E00640A3D /* AdSupport.framework */; };
+		80E2DC2318BB876700640A3D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2DC2218BB876700640A3D /* CoreData.framework */; };
+		80E2DC2518BB877300640A3D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2DC2418BB877300640A3D /* SystemConfiguration.framework */; };
+		80E2DC2718BB878400640A3D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2DC2618BB878400640A3D /* libz.dylib */; };
+		80E2DC2A18BB899700640A3D /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2DC2918BB899700640A3D /* Crashlytics.framework */; };
+		80E2DC2D18BDDFF000640A3D /* XYGoogleAnalyticsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E2DC2C18BDDFF000640A3D /* XYGoogleAnalyticsService.m */; };
+		80F29B8719B4A635003138B7 /* XYTasksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F29B8619B4A635003138B7 /* XYTasksButton.m */; };
+		80F29B8B19B4BAEE003138B7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F29B8A19B4BAEE003138B7 /* MBProgressHUD.m */; };
+		80F29B8F19B60560003138B7 /* XYTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F29B8D19B60560003138B7 /* XYTaskViewController.m */; };
+		80F29B9019B60560003138B7 /* XYTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F29B8E19B60560003138B7 /* XYTaskViewController.xib */; };
+		80F29B9419B607A6003138B7 /* XYTaskDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F29B9219B607A6003138B7 /* XYTaskDefaultCell.m */; };
+		80F29B9519B607A6003138B7 /* XYTaskDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F29B9319B607A6003138B7 /* XYTaskDefaultCell.xib */; };
+		81AEE86D02844D70B41E0B71 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1022408DC2F847C5A483375D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80AB733F18BB49EC00CC2B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AB731118BB49EB00CC2B39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80AB731818BB49EB00CC2B39;
+			remoteInfo = xylo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1022408DC2F847C5A483375D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0138A118C4B60E009D4FC0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7B0138A318C4C4D4009D4FC0 /* XYRegistrationNextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRegistrationNextButton.h; sourceTree = "<group>"; };
+		7B0138A418C4C4D4009D4FC0 /* XYRegistrationNextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRegistrationNextButton.m; sourceTree = "<group>"; };
+		7B435CD01963F88D00DA0467 /* XYBaseLoggedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseLoggedInViewController.h; sourceTree = "<group>"; };
+		7B435CD11963F88D00DA0467 /* XYBaseLoggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseLoggedInViewController.m; sourceTree = "<group>"; };
+		7B4849CF193CC2FB006C9982 /* XYNewPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNewPasswordViewController.h; sourceTree = "<group>"; };
+		7B4849D0193CC2FB006C9982 /* XYNewPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNewPasswordViewController.m; sourceTree = "<group>"; };
+		7B6E73E518ED9BAC0012F111 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		7B79FFA3191B912500B9C3F9 /* XYLeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		7B79FFA4191B912500B9C3F9 /* XYLeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		7B8AC06118F536A100BBA5C9 /* XYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRootViewController.h; sourceTree = "<group>"; };
+		7B8AC06218F536A100BBA5C9 /* XYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRootViewController.m; sourceTree = "<group>"; };
+		7B8AC06318F536A100BBA5C9 /* XYRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYRootViewController.xib; sourceTree = "<group>"; };
+		7B8AC06718F5373500BBA5C9 /* XYLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLeftMenuViewController.h; sourceTree = "<group>"; };
+		7B8AC06818F5373500BBA5C9 /* XYLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLeftMenuViewController.m; sourceTree = "<group>"; };
+		7B8AC06918F5373500BBA5C9 /* XYLeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYLeftMenuViewController.xib; sourceTree = "<group>"; };
+		7B8AC06D18F53A7500BBA5C9 /* XYActivityFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityFeedViewController.h; sourceTree = "<group>"; };
+		7B8AC06E18F53A7500BBA5C9 /* XYActivityFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityFeedViewController.m; sourceTree = "<group>"; };
+		7B8AC06F18F53A7500BBA5C9 /* XYActivityFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYActivityFeedViewController.xib; sourceTree = "<group>"; };
+		7BAEE9351938BABB004C7297 /* XYPasswordResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPasswordResetViewController.h; sourceTree = "<group>"; };
+		7BAEE9361938BABB004C7297 /* XYPasswordResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPasswordResetViewController.m; sourceTree = "<group>"; };
+		7BAEE9381938C7B5004C7297 /* UIView+viewRecursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+viewRecursion.h"; sourceTree = "<group>"; };
+		7BAEE9391938C7B5004C7297 /* UIView+viewRecursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+viewRecursion.m"; sourceTree = "<group>"; };
+		7BD155A51906855B00DE8C37 /* XYLoggedInNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLoggedInNavigationViewController.h; sourceTree = "<group>"; };
+		7BD155A61906855B00DE8C37 /* XYLoggedInNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLoggedInNavigationViewController.m; sourceTree = "<group>"; };
+		7BECB8F618EC3042001B704A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		7BECB8FA18EC30FF001B704A /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		80123F7F18D1AB2C0033E5B4 /* XYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUtils.h; sourceTree = "<group>"; };
+		80123F8018D1AB2C0033E5B4 /* XYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUtils.m; sourceTree = "<group>"; };
+		80123F8218D1D4E90033E5B4 /* XYVerificationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYVerificationTextField.h; sourceTree = "<group>"; };
+		80123F8318D1D4E90033E5B4 /* XYVerificationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYVerificationTextField.m; sourceTree = "<group>"; };
+		80123F8518D1F9460033E5B4 /* XYAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAPIClient.h; sourceTree = "<group>"; };
+		80123F8618D1F9460033E5B4 /* XYAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAPIClient.m; sourceTree = "<group>"; };
+		80123F8A18D31B8A0033E5B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80123F8D18D339560033E5B4 /* JSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseSerializerWithData.h; sourceTree = "<group>"; };
+		80123F8E18D339560033E5B4 /* JSONResponseSerializerWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONResponseSerializerWithData.m; sourceTree = "<group>"; };
+		80172B6D19AC7C3700576386 /* XYTaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskListViewController.h; sourceTree = "<group>"; };
+		80172B6E19AC7C3700576386 /* XYTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskListViewController.m; sourceTree = "<group>"; };
+		80172B6F19AC7C3700576386 /* XYTaskListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYTaskListViewController.xib; sourceTree = "<group>"; };
+		80172B7219AC800C00576386 /* XYTaskListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskListCell.h; sourceTree = "<group>"; };
+		80172B7319AC800C00576386 /* XYTaskListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskListCell.m; sourceTree = "<group>"; };
+		80172B7419AC800C00576386 /* XYTaskListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYTaskListCell.xib; sourceTree = "<group>"; };
+		80172B7719AC80D500576386 /* XYTaskListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskListModel.h; sourceTree = "<group>"; };
+		80172B7819AC80D500576386 /* XYTaskListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskListModel.m; sourceTree = "<group>"; };
+		80172B7A19ACA8B600576386 /* XYTaskService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskService.h; sourceTree = "<group>"; };
+		80172B7B19ACA8B600576386 /* XYTaskService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskService.m; sourceTree = "<group>"; };
+		80172B7D19ACAE7B00576386 /* XYEnsembleType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnsembleType.h; sourceTree = "<group>"; };
+		80172B7E19ACAE7B00576386 /* XYEnsembleType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnsembleType.m; sourceTree = "<group>"; };
+		80172B8019ACAE7B00576386 /* XYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUser.h; sourceTree = "<group>"; };
+		80172B8119ACAE7B00576386 /* XYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUser.m; sourceTree = "<group>"; };
+		80172B8319ACAE7B00576386 /* XYOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganization.h; sourceTree = "<group>"; };
+		80172B8419ACAE7B00576386 /* XYOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganization.m; sourceTree = "<group>"; };
+		80172B8619ACAE7B00576386 /* XYEnsemble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnsemble.h; sourceTree = "<group>"; };
+		80172B8719ACAE7B00576386 /* XYEnsemble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnsemble.m; sourceTree = "<group>"; };
+		80172B8919ACAE7B00576386 /* XYInstrumentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYInstrumentType.h; sourceTree = "<group>"; };
+		80172B8A19ACAE7B00576386 /* XYInstrumentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYInstrumentType.m; sourceTree = "<group>"; };
+		80172B8F19ACAE7C00576386 /* XYPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPosition.h; sourceTree = "<group>"; };
+		80172B9019ACAE7C00576386 /* XYPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPosition.m; sourceTree = "<group>"; };
+		80172B9219ACB0DC00576386 /* XYTask+TaskFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYTask+TaskFunctions.h"; sourceTree = "<group>"; };
+		80172B9319ACB0DC00576386 /* XYTask+TaskFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYTask+TaskFunctions.m"; sourceTree = "<group>"; };
+		80172B9819B096FC00576386 /* XYTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTask.h; sourceTree = "<group>"; };
+		80172B9919B096FC00576386 /* XYTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTask.m; sourceTree = "<group>"; };
+		80172B9B19B0B5FB00576386 /* XYTaskHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskHeaderView.h; sourceTree = "<group>"; };
+		80172B9C19B0B5FB00576386 /* XYTaskHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskHeaderView.m; sourceTree = "<group>"; };
+		80172B9E19B0B60900576386 /* XYTaskHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYTaskHeaderView.xib; sourceTree = "<group>"; };
+		802EB56118FD258D000F0701 /* XYOrganizationSocialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationSocialCell.h; sourceTree = "<group>"; };
+		802EB56218FD258D000F0701 /* XYOrganizationSocialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationSocialCell.m; sourceTree = "<group>"; };
+		802EB56418FD25A0000F0701 /* XYOrganizationSocialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrganizationSocialCell.xib; sourceTree = "<group>"; };
+		802EB56618FD620F000F0701 /* XYPendingContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPendingContactCell.h; sourceTree = "<group>"; };
+		802EB56718FD620F000F0701 /* XYPendingContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPendingContactCell.m; sourceTree = "<group>"; };
+		802EB56918FD6223000F0701 /* XYPendingContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYPendingContactCell.xib; sourceTree = "<group>"; };
+		802EB56B18FD7D1E000F0701 /* XYOrganizationMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationMemberCell.h; sourceTree = "<group>"; };
+		802EB56C18FD7D1E000F0701 /* XYOrganizationMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationMemberCell.m; sourceTree = "<group>"; };
+		802EB56E18FD7D30000F0701 /* XYOrganizationMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrganizationMemberCell.xib; sourceTree = "<group>"; };
+		80476665191A67B300A13859 /* XYUser+UserFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYUser+UserFunctions.h"; sourceTree = "<group>"; };
+		80476666191A67B300A13859 /* XYUser+UserFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYUser+UserFunctions.m"; sourceTree = "<group>"; };
+		80476668191BB03F00A13859 /* XYEnsembleSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnsembleSelectionViewController.h; sourceTree = "<group>"; };
+		80476669191BB03F00A13859 /* XYEnsembleSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnsembleSelectionViewController.m; sourceTree = "<group>"; };
+		8047666A191BB03F00A13859 /* XYEnsembleSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYEnsembleSelectionViewController.xib; sourceTree = "<group>"; };
+		8055B36F18C479EE0095F4DE /* XYEnterCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnterCodeViewController.h; sourceTree = "<group>"; };
+		8055B37018C479EE0095F4DE /* XYEnterCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnterCodeViewController.m; sourceTree = "<group>"; };
+		8055B37118C479EE0095F4DE /* XYEnterCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYEnterCodeViewController.xib; sourceTree = "<group>"; };
+		8055B37F18C47AAC0095F4DE /* XYConfirmOrganizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYConfirmOrganizationViewController.h; sourceTree = "<group>"; };
+		8055B38018C47AAC0095F4DE /* XYConfirmOrganizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYConfirmOrganizationViewController.m; sourceTree = "<group>"; };
+		8055B38118C47AAC0095F4DE /* XYConfirmOrganizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYConfirmOrganizationViewController.xib; sourceTree = "<group>"; };
+		8055B38A18C47BB10095F4DE /* XYPersonalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPersonalInformationViewController.h; sourceTree = "<group>"; };
+		8055B38B18C47BB10095F4DE /* XYPersonalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPersonalInformationViewController.m; sourceTree = "<group>"; };
+		8055B38C18C47BB10095F4DE /* XYPersonalInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYPersonalInformationViewController.xib; sourceTree = "<group>"; };
+		8055B3A118C721C00095F4DE /* XYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTextField.h; sourceTree = "<group>"; };
+		8055B3A218C721C00095F4DE /* XYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTextField.m; sourceTree = "<group>"; };
+		805E681919541E51009B0AE9 /* XYInstrumentType+InstrumentTypeFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYInstrumentType+InstrumentTypeFunctions.h"; sourceTree = "<group>"; };
+		805E681A19541E51009B0AE9 /* XYInstrumentType+InstrumentTypeFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYInstrumentType+InstrumentTypeFunctions.m"; sourceTree = "<group>"; };
+		805E681C19547B08009B0AE9 /* XYInstrumentTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYInstrumentTypeButton.h; sourceTree = "<group>"; };
+		805E681D19547B08009B0AE9 /* XYInstrumentTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYInstrumentTypeButton.m; sourceTree = "<group>"; };
+		8062E74918DAE0ED004E5A76 /* XYEnsembleSelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYEnsembleSelectionButton.h; path = ../Controllers/RegistrationViewControllers/XYEnsembleSelectionButton.h; sourceTree = "<group>"; };
+		8062E74A18DAE0ED004E5A76 /* XYEnsembleSelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYEnsembleSelectionButton.m; path = ../Controllers/RegistrationViewControllers/XYEnsembleSelectionButton.m; sourceTree = "<group>"; };
+		8065FD2318E428CA00659840 /* XYEnsembleSelectionScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnsembleSelectionScrollView.h; sourceTree = "<group>"; };
+		8065FD2418E428CA00659840 /* XYEnsembleSelectionScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnsembleSelectionScrollView.m; sourceTree = "<group>"; };
+		806BEA9918FE7821002DD18C /* XYEnsembleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnsembleViewController.h; sourceTree = "<group>"; };
+		806BEA9A18FE7821002DD18C /* XYEnsembleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnsembleViewController.m; sourceTree = "<group>"; };
+		806BEA9B18FE7821002DD18C /* XYEnsembleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYEnsembleViewController.xib; sourceTree = "<group>"; };
+		8073EBF81920BBE900A4AF3F /* XYEnsembleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnsembleService.h; sourceTree = "<group>"; };
+		8073EBF91920BBE900A4AF3F /* XYEnsembleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnsembleService.m; sourceTree = "<group>"; };
+		8073EC241922331D00A4AF3F /* XYPosition+PositionFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYPosition+PositionFunctions.h"; sourceTree = "<group>"; };
+		8073EC251922331D00A4AF3F /* XYPosition+PositionFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYPosition+PositionFunctions.m"; sourceTree = "<group>"; };
+		8075B67618F4110000238645 /* XYBaseProfilePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseProfilePageController.h; sourceTree = "<group>"; };
+		8075B67718F4110000238645 /* XYBaseProfilePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseProfilePageController.m; sourceTree = "<group>"; };
+		8075B67918F4114200238645 /* XYOrganizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationViewController.h; sourceTree = "<group>"; };
+		8075B67A18F4114200238645 /* XYOrganizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationViewController.m; sourceTree = "<group>"; };
+		8075B67B18F4114200238645 /* XYOrganizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrganizationViewController.xib; sourceTree = "<group>"; };
+		8075B68118F417F400238645 /* XYOrganizationProfileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationProfileHeader.h; sourceTree = "<group>"; };
+		8075B68218F417F400238645 /* XYOrganizationProfileHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationProfileHeader.m; sourceTree = "<group>"; };
+		8075B68418F4181600238645 /* XYOrganizationProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrganizationProfileHeader.xib; sourceTree = "<group>"; };
+		8075B68618F54E2B00238645 /* XYOrganizationContactInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationContactInfoCell.h; sourceTree = "<group>"; };
+		8075B68718F54E2B00238645 /* XYOrganizationContactInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationContactInfoCell.m; sourceTree = "<group>"; };
+		8075B68918F5528500238645 /* XYOrganizationContactInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrganizationContactInfoCell.xib; sourceTree = "<group>"; };
+		8075B68B18F5604C00238645 /* XYOrganizationEnsembleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationEnsembleCell.h; sourceTree = "<group>"; };
+		8075B68C18F5604C00238645 /* XYOrganizationEnsembleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationEnsembleCell.m; sourceTree = "<group>"; };
+		8075B68E18F560E300238645 /* XYOrganizationEnsembleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrganizationEnsembleCell.xib; sourceTree = "<group>"; };
+		8075B69018F5802200238645 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		8080422A190E3ADD006A4378 /* XYOrganizationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationService.h; sourceTree = "<group>"; };
+		8080422B190E3ADD006A4378 /* XYOrganizationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationService.m; sourceTree = "<group>"; };
+		8080422D190E7823006A4378 /* XYOrganization+OrganizationFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYOrganization+OrganizationFunctions.h"; sourceTree = "<group>"; };
+		8080422E190E7823006A4378 /* XYOrganization+OrganizationFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYOrganization+OrganizationFunctions.m"; sourceTree = "<group>"; };
+		8080423C190E81CC006A4378 /* XYEnsemble+EnsembleFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYEnsemble+EnsembleFunctions.h"; sourceTree = "<group>"; };
+		8080423D190E81CC006A4378 /* XYEnsemble+EnsembleFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYEnsemble+EnsembleFunctions.m"; sourceTree = "<group>"; };
+		80804240190E8575006A4378 /* NSDictionary+NullConverver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NullConverver.h"; sourceTree = "<group>"; };
+		80804241190E8575006A4378 /* NSDictionary+NullConverver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NullConverver.m"; sourceTree = "<group>"; };
+		8081AE9319012C7A0095456E /* XYEnsembleProfileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYEnsembleProfileHeader.h; sourceTree = "<group>"; };
+		8081AE9419012C7A0095456E /* XYEnsembleProfileHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYEnsembleProfileHeader.m; sourceTree = "<group>"; };
+		8081AE9619012CD60095456E /* XYEnsembleProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYEnsembleProfileHeader.xib; sourceTree = "<group>"; };
+		80AB731918BB49EB00CC2B39 /* xylo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xylo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AB731C18BB49EB00CC2B39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80AB731E18BB49EB00CC2B39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80AB732018BB49EB00CC2B39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80AB732418BB49EB00CC2B39 /* xylo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xylo-Info.plist"; sourceTree = "<group>"; };
+		80AB732618BB49EB00CC2B39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80AB732818BB49EB00CC2B39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80AB732A18BB49EB00CC2B39 /* xylo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xylo-Prefix.pch"; sourceTree = "<group>"; };
+		80AB732B18BB49EB00CC2B39 /* XYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAppDelegate.h; sourceTree = "<group>"; };
+		80AB732C18BB49EB00CC2B39 /* XYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAppDelegate.m; sourceTree = "<group>"; };
+		80AB733A18BB49EC00CC2B39 /* xyloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xyloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AB733B18BB49EC00CC2B39 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		80AB734318BB49EC00CC2B39 /* xyloTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xyloTests-Info.plist"; sourceTree = "<group>"; };
+		80AB734518BB49EC00CC2B39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80AB734718BB49EC00CC2B39 /* xyloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xyloTests.m; sourceTree = "<group>"; };
+		80AB736418BB62CD00CC2B39 /* Xylo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Xylo.xcdatamodel; sourceTree = "<group>"; };
+		80AB736618BB630B00CC2B39 /* XYLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLoginService.h; sourceTree = "<group>"; };
+		80AB736718BB630B00CC2B39 /* XYLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLoginService.m; sourceTree = "<group>"; };
+		80AB736918BB639A00CC2B39 /* XYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseViewController.h; sourceTree = "<group>"; };
+		80AB736A18BB639A00CC2B39 /* XYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseViewController.m; sourceTree = "<group>"; };
+		80BF5F71196422D30036F300 /* XYOrganizationsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrganizationsListModel.h; sourceTree = "<group>"; };
+		80BF5F72196422D30036F300 /* XYOrganizationsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrganizationsListModel.m; sourceTree = "<group>"; };
+		80C52136195D85A60062E1A9 /* XYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLoginViewController.h; sourceTree = "<group>"; };
+		80C52137195D85A60062E1A9 /* XYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLoginViewController.m; sourceTree = "<group>"; };
+		80C52138195D85A60062E1A9 /* XYLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYLoginViewController.xib; sourceTree = "<group>"; };
+		80CBC1FF18D7140C00D43A93 /* XYErrorService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYErrorService.h; sourceTree = "<group>"; };
+		80CBC20018D7140C00D43A93 /* XYErrorService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYErrorService.m; sourceTree = "<group>"; };
+		80D7FF0E19459C63006C0979 /* XYBaseRightArrowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseRightArrowButton.h; sourceTree = "<group>"; };
+		80D7FF0F19459C63006C0979 /* XYBaseRightArrowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseRightArrowButton.m; sourceTree = "<group>"; };
+		80D7FF1019459C63006C0979 /* XYPositionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPositionButton.h; sourceTree = "<group>"; };
+		80D7FF1119459C63006C0979 /* XYPositionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPositionButton.m; sourceTree = "<group>"; };
+		80DF4B1519B74D83003700AE /* XYTaskDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskDescriptionCell.h; sourceTree = "<group>"; };
+		80DF4B1619B74D83003700AE /* XYTaskDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskDescriptionCell.m; sourceTree = "<group>"; };
+		80DF4B1719B74D83003700AE /* XYTaskDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYTaskDescriptionCell.xib; sourceTree = "<group>"; };
+		80DF4B1A19B84E0F003700AE /* XYNavigationBarBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYNavigationBarBackButton.h; path = ../Controllers/TasksViewControllers/XYNavigationBarBackButton.h; sourceTree = "<group>"; };
+		80DF4B1B19B84E0F003700AE /* XYNavigationBarBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYNavigationBarBackButton.m; path = ../Controllers/TasksViewControllers/XYNavigationBarBackButton.m; sourceTree = "<group>"; };
+		80DF4B1D19B84E2F003700AE /* XYNavigationBarBackButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYNavigationBarBackButton.xib; sourceTree = "<group>"; };
+		80DF4B1F19B85ABC003700AE /* XYNavigationBarEditButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYNavigationBarEditButton.xib; sourceTree = "<group>"; };
+		80DF4B2119B85ACF003700AE /* XYNavigationBarEditButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNavigationBarEditButton.h; sourceTree = "<group>"; };
+		80DF4B2219B85ACF003700AE /* XYNavigationBarEditButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNavigationBarEditButton.m; sourceTree = "<group>"; };
+		80E2DC1418BB854B00640A3D /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		80E2DC1518BB854B00640A3D /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		80E2DC1618BB854B00640A3D /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		80E2DC1718BB854B00640A3D /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		80E2DC1818BB854B00640A3D /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		80E2DC1918BB854B00640A3D /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		80E2DC1A18BB854B00640A3D /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		80E2DC1C18BB854B00640A3D /* UIView+NibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoading.h"; sourceTree = "<group>"; };
+		80E2DC1D18BB854B00640A3D /* UIView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoading.m"; sourceTree = "<group>"; };
+		80E2DC2018BB875E00640A3D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		80E2DC2218BB876700640A3D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		80E2DC2418BB877300640A3D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		80E2DC2618BB878400640A3D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		80E2DC2918BB899700640A3D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		80E2DC2B18BDDFF000640A3D /* XYGoogleAnalyticsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYGoogleAnalyticsService.h; sourceTree = "<group>"; };
+		80E2DC2C18BDDFF000640A3D /* XYGoogleAnalyticsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYGoogleAnalyticsService.m; sourceTree = "<group>"; };
+		80F29B8519B4A635003138B7 /* XYTasksButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTasksButton.h; sourceTree = "<group>"; };
+		80F29B8619B4A635003138B7 /* XYTasksButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTasksButton.m; sourceTree = "<group>"; };
+		80F29B8919B4BAEE003138B7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		80F29B8A19B4BAEE003138B7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		80F29B8C19B60560003138B7 /* XYTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskViewController.h; sourceTree = "<group>"; };
+		80F29B8D19B60560003138B7 /* XYTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskViewController.m; sourceTree = "<group>"; };
+		80F29B8E19B60560003138B7 /* XYTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYTaskViewController.xib; sourceTree = "<group>"; };
+		80F29B9119B607A6003138B7 /* XYTaskDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTaskDefaultCell.h; sourceTree = "<group>"; };
+		80F29B9219B607A6003138B7 /* XYTaskDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTaskDefaultCell.m; sourceTree = "<group>"; };
+		80F29B9319B607A6003138B7 /* XYTaskDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYTaskDefaultCell.xib; sourceTree = "<group>"; };
+		C4CDD247C76845D4B748356F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80AB731618BB49EB00CC2B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0138A218C4B60E009D4FC0 /* QuartzCore.framework in Frameworks */,
+				80E2DC2718BB878400640A3D /* libz.dylib in Frameworks */,
+				80E2DC2518BB877300640A3D /* SystemConfiguration.framework in Frameworks */,
+				80E2DC2318BB876700640A3D /* CoreData.framework in Frameworks */,
+				80E2DC2118BB875E00640A3D /* AdSupport.framework in Frameworks */,
+				80AB731F18BB49EB00CC2B39 /* CoreGraphics.framework in Frameworks */,
+				80AB732118BB49EB00CC2B39 /* UIKit.framework in Frameworks */,
+				80E2DC2A18BB899700640A3D /* Crashlytics.framework in Frameworks */,
+				80AB731D18BB49EB00CC2B39 /* Foundation.framework in Frameworks */,
+				80E2DC1E18BB854B00640A3D /* libGoogleAnalyticsServices.a in Frameworks */,
+				81AEE86D02844D70B41E0B71 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AB733718BB49EC00CC2B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AB733C18BB49EC00CC2B39 /* XCTest.framework in Frameworks */,
+				80AB733E18BB49EC00CC2B39 /* UIKit.framework in Frameworks */,
+				80AB733D18BB49EC00CC2B39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B6CD50918F40B25008E685C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				8055B36C18C479CC0095F4DE /* Enter code / Login */,
+				7BAEE9341938BA95004C7297 /* Password reset */,
+				8055B37C18C47A8A0095F4DE /* ConfirmOrganizationViewController */,
+				8055B38718C47B9E0095F4DE /* RegistrationViewControllers */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		7B6CD50B18F40B57008E685C /* Logged In Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BD155A51906855B00DE8C37 /* XYLoggedInNavigationViewController.h */,
+				7BD155A61906855B00DE8C37 /* XYLoggedInNavigationViewController.m */,
+				7B435CD01963F88D00DA0467 /* XYBaseLoggedInViewController.h */,
+				7B435CD11963F88D00DA0467 /* XYBaseLoggedInViewController.m */,
+				80172B6A19AC7BE100576386 /* Tasks */,
+				7B8AC06618F536B300BBA5C9 /* RootViewController & LeftMenuViewController */,
+				8075B67318F4107B00238645 /* ProfilePageControllers */,
+				7B8AC06C18F53A5300BBA5C9 /* ActivityFeedViewController */,
+			);
+			name = "Logged In Views";
+			sourceTree = "<group>";
+		};
+		7B79FFA2191B90E200B9C3F9 /* Left Menu */ = {
+			isa = PBXGroup;
+			children = (
+				7B8AC06718F5373500BBA5C9 /* XYLeftMenuViewController.h */,
+				7B8AC06818F5373500BBA5C9 /* XYLeftMenuViewController.m */,
+				7B8AC06918F5373500BBA5C9 /* XYLeftMenuViewController.xib */,
+				7B79FFA3191B912500B9C3F9 /* XYLeftMenuTableViewCell.h */,
+				7B79FFA4191B912500B9C3F9 /* XYLeftMenuTableViewCell.m */,
+				80BF5F71196422D30036F300 /* XYOrganizationsListModel.h */,
+				80BF5F72196422D30036F300 /* XYOrganizationsListModel.m */,
+			);
+			name = "Left Menu";
+			sourceTree = "<group>";
+		};
+		7B8AC06618F536B300BBA5C9 /* RootViewController & LeftMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B8AC06118F536A100BBA5C9 /* XYRootViewController.h */,
+				7B8AC06218F536A100BBA5C9 /* XYRootViewController.m */,
+				7B8AC06318F536A100BBA5C9 /* XYRootViewController.xib */,
+				7B79FFA2191B90E200B9C3F9 /* Left Menu */,
+			);
+			name = "RootViewController & LeftMenuViewController";
+			sourceTree = "<group>";
+		};
+		7B8AC06C18F53A5300BBA5C9 /* ActivityFeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B8AC06D18F53A7500BBA5C9 /* XYActivityFeedViewController.h */,
+				7B8AC06E18F53A7500BBA5C9 /* XYActivityFeedViewController.m */,
+				7B8AC06F18F53A7500BBA5C9 /* XYActivityFeedViewController.xib */,
+			);
+			name = ActivityFeedViewController;
+			sourceTree = "<group>";
+		};
+		7BAEE9341938BA95004C7297 /* Password reset */ = {
+			isa = PBXGroup;
+			children = (
+				7BAEE9351938BABB004C7297 /* XYPasswordResetViewController.h */,
+				7BAEE9361938BABB004C7297 /* XYPasswordResetViewController.m */,
+				7B4849CF193CC2FB006C9982 /* XYNewPasswordViewController.h */,
+				7B4849D0193CC2FB006C9982 /* XYNewPasswordViewController.m */,
+			);
+			name = "Password reset";
+			sourceTree = "<group>";
+		};
+		7BAEE93B1938C7FF004C7297 /* UIView+viewRecursion */ = {
+			isa = PBXGroup;
+			children = (
+				7BAEE9381938C7B5004C7297 /* UIView+viewRecursion.h */,
+				7BAEE9391938C7B5004C7297 /* UIView+viewRecursion.m */,
+			);
+			name = "UIView+viewRecursion";
+			sourceTree = "<group>";
+		};
+		7BECB8F918EC3049001B704A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7BECB8F618EC3042001B704A /* OpenSans-Regular.ttf */,
+				7BECB8FA18EC30FF001B704A /* OpenSans-Bold.ttf */,
+				7B6E73E518ED9BAC0012F111 /* OpenSans-Light.ttf */,
+				8075B69018F5802200238645 /* OpenSans-Semibold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		80123F7C18D1AB140033E5B4 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80123F7F18D1AB2C0033E5B4 /* XYUtils.h */,
+				80123F8018D1AB2C0033E5B4 /* XYUtils.m */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		80123F8C18D339110033E5B4 /* AFJSONResponseSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				80123F8D18D339560033E5B4 /* JSONResponseSerializerWithData.h */,
+				80123F8E18D339560033E5B4 /* JSONResponseSerializerWithData.m */,
+			);
+			name = AFJSONResponseSerializer;
+			path = "../3rd party classes";
+			sourceTree = "<group>";
+		};
+		80172B6A19AC7BE100576386 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				80172B6D19AC7C3700576386 /* XYTaskListViewController.h */,
+				80172B6E19AC7C3700576386 /* XYTaskListViewController.m */,
+				80172B6F19AC7C3700576386 /* XYTaskListViewController.xib */,
+				80F29B8C19B60560003138B7 /* XYTaskViewController.h */,
+				80F29B8D19B60560003138B7 /* XYTaskViewController.m */,
+				80F29B8E19B60560003138B7 /* XYTaskViewController.xib */,
+				80F29B9119B607A6003138B7 /* XYTaskDefaultCell.h */,
+				80F29B9219B607A6003138B7 /* XYTaskDefaultCell.m */,
+				80F29B9319B607A6003138B7 /* XYTaskDefaultCell.xib */,
+				80DF4B1519B74D83003700AE /* XYTaskDescriptionCell.h */,
+				80DF4B1619B74D83003700AE /* XYTaskDescriptionCell.m */,
+				80DF4B1719B74D83003700AE /* XYTaskDescriptionCell.xib */,
+				80172B7719AC80D500576386 /* XYTaskListModel.h */,
+				80172B7819AC80D500576386 /* XYTaskListModel.m */,
+				80172B7219AC800C00576386 /* XYTaskListCell.h */,
+				80172B7319AC800C00576386 /* XYTaskListCell.m */,
+				80172B7419AC800C00576386 /* XYTaskListCell.xib */,
+				80172B9B19B0B5FB00576386 /* XYTaskHeaderView.h */,
+				80172B9C19B0B5FB00576386 /* XYTaskHeaderView.m */,
+				80172B9E19B0B60900576386 /* XYTaskHeaderView.xib */,
+				80F29B8519B4A635003138B7 /* XYTasksButton.h */,
+				80F29B8619B4A635003138B7 /* XYTasksButton.m */,
+			);
+			name = Tasks;
+			path = TasksViewControllers;
+			sourceTree = "<group>";
+		};
+		8055B36C18C479CC0095F4DE /* Enter code / Login */ = {
+			isa = PBXGroup;
+			children = (
+				8055B36F18C479EE0095F4DE /* XYEnterCodeViewController.h */,
+				8055B37018C479EE0095F4DE /* XYEnterCodeViewController.m */,
+				8055B37118C479EE0095F4DE /* XYEnterCodeViewController.xib */,
+				80C52136195D85A60062E1A9 /* XYLoginViewController.h */,
+				80C52137195D85A60062E1A9 /* XYLoginViewController.m */,
+				80C52138195D85A60062E1A9 /* XYLoginViewController.xib */,
+			);
+			name = "Enter code / Login";
+			path = EnterCodeViewController;
+			sourceTree = "<group>";
+		};
+		8055B37C18C47A8A0095F4DE /* ConfirmOrganizationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8055B37F18C47AAC0095F4DE /* XYConfirmOrganizationViewController.h */,
+				8055B38018C47AAC0095F4DE /* XYConfirmOrganizationViewController.m */,
+				8055B38118C47AAC0095F4DE /* XYConfirmOrganizationViewController.xib */,
+			);
+			path = ConfirmOrganizationViewController;
+			sourceTree = "<group>";
+		};
+		8055B38718C47B9E0095F4DE /* RegistrationViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80476668191BB03F00A13859 /* XYEnsembleSelectionViewController.h */,
+				80476669191BB03F00A13859 /* XYEnsembleSelectionViewController.m */,
+				8047666A191BB03F00A13859 /* XYEnsembleSelectionViewController.xib */,
+				8055B38A18C47BB10095F4DE /* XYPersonalInformationViewController.h */,
+				8055B38B18C47BB10095F4DE /* XYPersonalInformationViewController.m */,
+				8055B38C18C47BB10095F4DE /* XYPersonalInformationViewController.xib */,
+				8065FD2218E4289900659840 /* EnsembleSelectionViews */,
+			);
+			path = RegistrationViewControllers;
+			sourceTree = "<group>";
+		};
+		8065FD2218E4289900659840 /* EnsembleSelectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				8065FD2318E428CA00659840 /* XYEnsembleSelectionScrollView.h */,
+				8065FD2418E428CA00659840 /* XYEnsembleSelectionScrollView.m */,
+				8062E74918DAE0ED004E5A76 /* XYEnsembleSelectionButton.h */,
+				8062E74A18DAE0ED004E5A76 /* XYEnsembleSelectionButton.m */,
+				80D7FF0E19459C63006C0979 /* XYBaseRightArrowButton.h */,
+				80D7FF0F19459C63006C0979 /* XYBaseRightArrowButton.m */,
+				80D7FF1019459C63006C0979 /* XYPositionButton.h */,
+				80D7FF1119459C63006C0979 /* XYPositionButton.m */,
+				805E681C19547B08009B0AE9 /* XYInstrumentTypeButton.h */,
+				805E681D19547B08009B0AE9 /* XYInstrumentTypeButton.m */,
+			);
+			name = EnsembleSelectionViews;
+			path = ../../Views;
+			sourceTree = "<group>";
+		};
+		8075B67318F4107B00238645 /* ProfilePageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8075B67618F4110000238645 /* XYBaseProfilePageController.h */,
+				8075B67718F4110000238645 /* XYBaseProfilePageController.m */,
+				8075B67918F4114200238645 /* XYOrganizationViewController.h */,
+				8075B67A18F4114200238645 /* XYOrganizationViewController.m */,
+				8075B67B18F4114200238645 /* XYOrganizationViewController.xib */,
+				806BEA9918FE7821002DD18C /* XYEnsembleViewController.h */,
+				806BEA9A18FE7821002DD18C /* XYEnsembleViewController.m */,
+				806BEA9B18FE7821002DD18C /* XYEnsembleViewController.xib */,
+				8075B67E18F414CF00238645 /* ProfilePageViews */,
+			);
+			path = ProfilePageControllers;
+			sourceTree = "<group>";
+		};
+		8075B67E18F414CF00238645 /* ProfilePageViews */ = {
+			isa = PBXGroup;
+			children = (
+				8075B68118F417F400238645 /* XYOrganizationProfileHeader.h */,
+				8075B68218F417F400238645 /* XYOrganizationProfileHeader.m */,
+				8075B68418F4181600238645 /* XYOrganizationProfileHeader.xib */,
+				8081AE9319012C7A0095456E /* XYEnsembleProfileHeader.h */,
+				8081AE9419012C7A0095456E /* XYEnsembleProfileHeader.m */,
+				8081AE9619012CD60095456E /* XYEnsembleProfileHeader.xib */,
+				8075B68618F54E2B00238645 /* XYOrganizationContactInfoCell.h */,
+				8075B68718F54E2B00238645 /* XYOrganizationContactInfoCell.m */,
+				8075B68918F5528500238645 /* XYOrganizationContactInfoCell.xib */,
+				8075B68B18F5604C00238645 /* XYOrganizationEnsembleCell.h */,
+				8075B68C18F5604C00238645 /* XYOrganizationEnsembleCell.m */,
+				8075B68E18F560E300238645 /* XYOrganizationEnsembleCell.xib */,
+				802EB56118FD258D000F0701 /* XYOrganizationSocialCell.h */,
+				802EB56218FD258D000F0701 /* XYOrganizationSocialCell.m */,
+				802EB56418FD25A0000F0701 /* XYOrganizationSocialCell.xib */,
+				802EB56618FD620F000F0701 /* XYPendingContactCell.h */,
+				802EB56718FD620F000F0701 /* XYPendingContactCell.m */,
+				802EB56918FD6223000F0701 /* XYPendingContactCell.xib */,
+				802EB56B18FD7D1E000F0701 /* XYOrganizationMemberCell.h */,
+				802EB56C18FD7D1E000F0701 /* XYOrganizationMemberCell.m */,
+				802EB56E18FD7D30000F0701 /* XYOrganizationMemberCell.xib */,
+			);
+			name = ProfilePageViews;
+			path = ../../Views/ProfilePageViews;
+			sourceTree = "<group>";
+		};
+		8080423F190E8575006A4378 /* NSDictionary+NullConverter */ = {
+			isa = PBXGroup;
+			children = (
+				80804240190E8575006A4378 /* NSDictionary+NullConverver.h */,
+				80804241190E8575006A4378 /* NSDictionary+NullConverver.m */,
+			);
+			path = "NSDictionary+NullConverter";
+			sourceTree = "<group>";
+		};
+		80AB731018BB49EB00CC2B39 = {
+			isa = PBXGroup;
+			children = (
+				80AB732218BB49EB00CC2B39 /* xylo */,
+				80AB734118BB49EC00CC2B39 /* xyloTests */,
+				80AB731B18BB49EB00CC2B39 /* Frameworks */,
+				80AB731A18BB49EB00CC2B39 /* Products */,
+				C4CDD247C76845D4B748356F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		80AB731A18BB49EB00CC2B39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80AB731918BB49EB00CC2B39 /* xylo.app */,
+				80AB733A18BB49EC00CC2B39 /* xyloTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80AB731B18BB49EB00CC2B39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B0138A118C4B60E009D4FC0 /* QuartzCore.framework */,
+				80E2DC2918BB899700640A3D /* Crashlytics.framework */,
+				80E2DC2618BB878400640A3D /* libz.dylib */,
+				80E2DC2418BB877300640A3D /* SystemConfiguration.framework */,
+				80E2DC2218BB876700640A3D /* CoreData.framework */,
+				80E2DC2018BB875E00640A3D /* AdSupport.framework */,
+				80AB731C18BB49EB00CC2B39 /* Foundation.framework */,
+				80AB731E18BB49EB00CC2B39 /* CoreGraphics.framework */,
+				80AB732018BB49EB00CC2B39 /* UIKit.framework */,
+				80AB733B18BB49EC00CC2B39 /* XCTest.framework */,
+				1022408DC2F847C5A483375D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80AB732218BB49EB00CC2B39 /* xylo */ = {
+			isa = PBXGroup;
+			children = (
+				80AB732B18BB49EB00CC2B39 /* XYAppDelegate.h */,
+				80AB732C18BB49EB00CC2B39 /* XYAppDelegate.m */,
+				80AB735718BB5B7A00CC2B39 /* Data Models */,
+				80AB735A18BB5B9200CC2B39 /* Services */,
+				80AB735118BB4C7300CC2B39 /* Controllers */,
+				80AB735418BB5B2600CC2B39 /* Views */,
+				80E2DC1218BB854B00640A3D /* 3rd party classes */,
+				80123F7C18D1AB140033E5B4 /* Custom Classes */,
+				80AB732318BB49EB00CC2B39 /* Supporting Files */,
+			);
+			path = xylo;
+			sourceTree = "<group>";
+		};
+		80AB732318BB49EB00CC2B39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BECB8F918EC3049001B704A /* Fonts */,
+				80AB732418BB49EB00CC2B39 /* xylo-Info.plist */,
+				80123F8A18D31B8A0033E5B4 /* Images.xcassets */,
+				80AB732518BB49EB00CC2B39 /* InfoPlist.strings */,
+				80AB732818BB49EB00CC2B39 /* main.m */,
+				80AB732A18BB49EB00CC2B39 /* xylo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80AB734118BB49EC00CC2B39 /* xyloTests */ = {
+			isa = PBXGroup;
+			children = (
+				80AB734718BB49EC00CC2B39 /* xyloTests.m */,
+				80AB734218BB49EC00CC2B39 /* Supporting Files */,
+			);
+			path = xyloTests;
+			sourceTree = "<group>";
+		};
+		80AB734218BB49EC00CC2B39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80AB734318BB49EC00CC2B39 /* xyloTests-Info.plist */,
+				80AB734418BB49EC00CC2B39 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80AB735118BB4C7300CC2B39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80AB736918BB639A00CC2B39 /* XYBaseViewController.h */,
+				80AB736A18BB639A00CC2B39 /* XYBaseViewController.m */,
+				7B6CD50918F40B25008E685C /* Registration */,
+				7B6CD50B18F40B57008E685C /* Logged In Views */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80AB735418BB5B2600CC2B39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B0138A318C4C4D4009D4FC0 /* XYRegistrationNextButton.h */,
+				7B0138A418C4C4D4009D4FC0 /* XYRegistrationNextButton.m */,
+				80DF4B1A19B84E0F003700AE /* XYNavigationBarBackButton.h */,
+				80DF4B1B19B84E0F003700AE /* XYNavigationBarBackButton.m */,
+				80DF4B1D19B84E2F003700AE /* XYNavigationBarBackButton.xib */,
+				80DF4B2119B85ACF003700AE /* XYNavigationBarEditButton.h */,
+				80DF4B2219B85ACF003700AE /* XYNavigationBarEditButton.m */,
+				80DF4B1F19B85ABC003700AE /* XYNavigationBarEditButton.xib */,
+				8055B3A118C721C00095F4DE /* XYTextField.h */,
+				8055B3A218C721C00095F4DE /* XYTextField.m */,
+				80123F8218D1D4E90033E5B4 /* XYVerificationTextField.h */,
+				80123F8318D1D4E90033E5B4 /* XYVerificationTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80AB735718BB5B7A00CC2B39 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				80172B9819B096FC00576386 /* XYTask.h */,
+				80172B9919B096FC00576386 /* XYTask.m */,
+				80AB736318BB62CD00CC2B39 /* Xylo.xcdatamodeld */,
+				80172B8F19ACAE7C00576386 /* XYPosition.h */,
+				80172B9019ACAE7C00576386 /* XYPosition.m */,
+				80172B8919ACAE7B00576386 /* XYInstrumentType.h */,
+				80172B8A19ACAE7B00576386 /* XYInstrumentType.m */,
+				80172B8619ACAE7B00576386 /* XYEnsemble.h */,
+				80172B8719ACAE7B00576386 /* XYEnsemble.m */,
+				80172B8319ACAE7B00576386 /* XYOrganization.h */,
+				80172B8419ACAE7B00576386 /* XYOrganization.m */,
+				80172B8019ACAE7B00576386 /* XYUser.h */,
+				80172B8119ACAE7B00576386 /* XYUser.m */,
+				80172B7D19ACAE7B00576386 /* XYEnsembleType.h */,
+				80172B7E19ACAE7B00576386 /* XYEnsembleType.m */,
+				80172B9219ACB0DC00576386 /* XYTask+TaskFunctions.h */,
+				80172B9319ACB0DC00576386 /* XYTask+TaskFunctions.m */,
+				805E681919541E51009B0AE9 /* XYInstrumentType+InstrumentTypeFunctions.h */,
+				805E681A19541E51009B0AE9 /* XYInstrumentType+InstrumentTypeFunctions.m */,
+				80476665191A67B300A13859 /* XYUser+UserFunctions.h */,
+				80476666191A67B300A13859 /* XYUser+UserFunctions.m */,
+				8080422D190E7823006A4378 /* XYOrganization+OrganizationFunctions.h */,
+				8080422E190E7823006A4378 /* XYOrganization+OrganizationFunctions.m */,
+				8080423C190E81CC006A4378 /* XYEnsemble+EnsembleFunctions.h */,
+				8080423D190E81CC006A4378 /* XYEnsemble+EnsembleFunctions.m */,
+				8073EC241922331D00A4AF3F /* XYPosition+PositionFunctions.h */,
+				8073EC251922331D00A4AF3F /* XYPosition+PositionFunctions.m */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		80AB735A18BB5B9200CC2B39 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80123F8C18D339110033E5B4 /* AFJSONResponseSerializer */,
+				80123F8518D1F9460033E5B4 /* XYAPIClient.h */,
+				80123F8618D1F9460033E5B4 /* XYAPIClient.m */,
+				80CBC1FF18D7140C00D43A93 /* XYErrorService.h */,
+				80CBC20018D7140C00D43A93 /* XYErrorService.m */,
+				80AB736618BB630B00CC2B39 /* XYLoginService.h */,
+				80AB736718BB630B00CC2B39 /* XYLoginService.m */,
+				8080422A190E3ADD006A4378 /* XYOrganizationService.h */,
+				8080422B190E3ADD006A4378 /* XYOrganizationService.m */,
+				8073EBF81920BBE900A4AF3F /* XYEnsembleService.h */,
+				8073EBF91920BBE900A4AF3F /* XYEnsembleService.m */,
+				80E2DC2B18BDDFF000640A3D /* XYGoogleAnalyticsService.h */,
+				80E2DC2C18BDDFF000640A3D /* XYGoogleAnalyticsService.m */,
+				80172B7A19ACA8B600576386 /* XYTaskService.h */,
+				80172B7B19ACA8B600576386 /* XYTaskService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		80E2DC1218BB854B00640A3D /* 3rd party classes */ = {
+			isa = PBXGroup;
+			children = (
+				80F29B8819B4BAEE003138B7 /* MBProgressHUD */,
+				7BAEE93B1938C7FF004C7297 /* UIView+viewRecursion */,
+				8080423F190E8575006A4378 /* NSDictionary+NullConverter */,
+				80E2DC1318BB854B00640A3D /* GoogleAnalytics */,
+				80E2DC1B18BB854B00640A3D /* UIView+NibLoading */,
+			);
+			path = "3rd party classes";
+			sourceTree = "<group>";
+		};
+		80E2DC1318BB854B00640A3D /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				80E2DC1418BB854B00640A3D /* GAI.h */,
+				80E2DC1518BB854B00640A3D /* GAIDictionaryBuilder.h */,
+				80E2DC1618BB854B00640A3D /* GAIFields.h */,
+				80E2DC1718BB854B00640A3D /* GAILogger.h */,
+				80E2DC1818BB854B00640A3D /* GAITrackedViewController.h */,
+				80E2DC1918BB854B00640A3D /* GAITracker.h */,
+				80E2DC1A18BB854B00640A3D /* libGoogleAnalyticsServices.a */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		80E2DC1B18BB854B00640A3D /* UIView+NibLoading */ = {
+			isa = PBXGroup;
+			children = (
+				80E2DC1C18BB854B00640A3D /* UIView+NibLoading.h */,
+				80E2DC1D18BB854B00640A3D /* UIView+NibLoading.m */,
+			);
+			path = "UIView+NibLoading";
+			sourceTree = "<group>";
+		};
+		80F29B8819B4BAEE003138B7 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				80F29B8919B4BAEE003138B7 /* MBProgressHUD.h */,
+				80F29B8A19B4BAEE003138B7 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80AB731818BB49EB00CC2B39 /* xylo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80AB734B18BB49EC00CC2B39 /* Build configuration list for PBXNativeTarget "xylo" */;
+			buildPhases = (
+				CCAD2151E7464716B9FBCA10 /* Check Pods Manifest.lock */,
+				80AB731518BB49EB00CC2B39 /* Sources */,
+				80AB731618BB49EB00CC2B39 /* Frameworks */,
+				80AB731718BB49EB00CC2B39 /* Resources */,
+				2F2D925018504CFC94F56B02 /* Copy Pods Resources */,
+				80E2DC2818BB893600640A3D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xylo;
+			productName = xylo;
+			productReference = 80AB731918BB49EB00CC2B39 /* xylo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80AB733918BB49EC00CC2B39 /* xyloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80AB734E18BB49EC00CC2B39 /* Build configuration list for PBXNativeTarget "xyloTests" */;
+			buildPhases = (
+				80AB733618BB49EC00CC2B39 /* Sources */,
+				80AB733718BB49EC00CC2B39 /* Frameworks */,
+				80AB733818BB49EC00CC2B39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80AB734018BB49EC00CC2B39 /* PBXTargetDependency */,
+			);
+			name = xyloTests;
+			productName = xyloTests;
+			productReference = 80AB733A18BB49EC00CC2B39 /* xyloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80AB731118BB49EB00CC2B39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XY;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Seriously;
+				TargetAttributes = {
+					80AB731818BB49EB00CC2B39 = {
+						DevelopmentTeam = 24G8XXFRSX;
+					};
+					80AB733918BB49EC00CC2B39 = {
+						TestTargetID = 80AB731818BB49EB00CC2B39;
+					};
+				};
+			};
+			buildConfigurationList = 80AB731418BB49EB00CC2B39 /* Build configuration list for PBXProject "xylo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80AB731018BB49EB00CC2B39;
+			productRefGroup = 80AB731A18BB49EB00CC2B39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80AB731818BB49EB00CC2B39 /* xylo */,
+				80AB733918BB49EC00CC2B39 /* xyloTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80AB731718BB49EB00CC2B39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8AC06518F536A100BBA5C9 /* XYRootViewController.xib in Resources */,
+				8075B68F18F560E300238645 /* XYOrganizationEnsembleCell.xib in Resources */,
+				8075B68518F4181600238645 /* XYOrganizationProfileHeader.xib in Resources */,
+				8075B67D18F4114200238645 /* XYOrganizationViewController.xib in Resources */,
+				802EB56518FD25A0000F0701 /* XYOrganizationSocialCell.xib in Resources */,
+				80DF4B2019B85ABC003700AE /* XYNavigationBarEditButton.xib in Resources */,
+				802EB56A18FD6223000F0701 /* XYPendingContactCell.xib in Resources */,
+				8081AE9719012CD60095456E /* XYEnsembleProfileHeader.xib in Resources */,
+				8055B38E18C47BB10095F4DE /* XYPersonalInformationViewController.xib in Resources */,
+				806BEA9D18FE7821002DD18C /* XYEnsembleViewController.xib in Resources */,
+				80172B7119AC7C3700576386 /* XYTaskListViewController.xib in Resources */,
+				80123F8B18D31B8A0033E5B4 /* Images.xcassets in Resources */,
+				7B8AC06B18F5373500BBA5C9 /* XYLeftMenuViewController.xib in Resources */,
+				80C5213A195D85A60062E1A9 /* XYLoginViewController.xib in Resources */,
+				8047666C191BB03F00A13859 /* XYEnsembleSelectionViewController.xib in Resources */,
+				7B8AC07118F53A7500BBA5C9 /* XYActivityFeedViewController.xib in Resources */,
+				80F29B9519B607A6003138B7 /* XYTaskDefaultCell.xib in Resources */,
+				80172B9F19B0B60900576386 /* XYTaskHeaderView.xib in Resources */,
+				8075B68A18F5528500238645 /* XYOrganizationContactInfoCell.xib in Resources */,
+				802EB56F18FD7D30000F0701 /* XYOrganizationMemberCell.xib in Resources */,
+				80F29B9019B60560003138B7 /* XYTaskViewController.xib in Resources */,
+				80AB732718BB49EB00CC2B39 /* InfoPlist.strings in Resources */,
+				7B6E73E618ED9BAC0012F111 /* OpenSans-Light.ttf in Resources */,
+				7BECB8FB18EC30FF001B704A /* OpenSans-Bold.ttf in Resources */,
+				80DF4B1E19B84E2F003700AE /* XYNavigationBarBackButton.xib in Resources */,
+				8055B37318C479EE0095F4DE /* XYEnterCodeViewController.xib in Resources */,
+				80DF4B1919B74D83003700AE /* XYTaskDescriptionCell.xib in Resources */,
+				80172B7619AC800C00576386 /* XYTaskListCell.xib in Resources */,
+				7BECB8F718EC3042001B704A /* OpenSans-Regular.ttf in Resources */,
+				8055B38318C47AAC0095F4DE /* XYConfirmOrganizationViewController.xib in Resources */,
+				8075B69118F5802200238645 /* OpenSans-Semibold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AB733818BB49EC00CC2B39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BECB8F818EC3042001B704A /* OpenSans-Regular.ttf in Resources */,
+				80AB734618BB49EC00CC2B39 /* InfoPlist.strings in Resources */,
+				7B6E73E718ED9BAC0012F111 /* OpenSans-Light.ttf in Resources */,
+				7BECB8FC18EC30FF001B704A /* OpenSans-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F2D925018504CFC94F56B02 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E2DC2818BB893600640A3D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ./Crashlytics.framework/run 7a23b83bede1369e3fa8035c5a5c668549ce2fa7 5b7a37e4a31bd93d2b9942d8fd04f4d414fe0638d262a4a6f150acc0ca8eb2a3";
+		};
+		CCAD2151E7464716B9FBCA10 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80AB731518BB49EB00CC2B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8073EC261922331D00A4AF3F /* XYPosition+PositionFunctions.m in Sources */,
+				7B4849D1193CC2FB006C9982 /* XYNewPasswordViewController.m in Sources */,
+				8047666B191BB03F00A13859 /* XYEnsembleSelectionViewController.m in Sources */,
+				8075B67C18F4114200238645 /* XYOrganizationViewController.m in Sources */,
+				80E2DC1F18BB854B00640A3D /* UIView+NibLoading.m in Sources */,
+				8075B67818F4110000238645 /* XYBaseProfilePageController.m in Sources */,
+				806BEA9C18FE7821002DD18C /* XYEnsembleViewController.m in Sources */,
+				8080423E190E81CC006A4378 /* XYEnsemble+EnsembleFunctions.m in Sources */,
+				8075B68318F417F400238645 /* XYOrganizationProfileHeader.m in Sources */,
+				80172B9119ACAE7C00576386 /* XYPosition.m in Sources */,
+				80172B7919AC80D500576386 /* XYTaskListModel.m in Sources */,
+				7BD155A71906855B00DE8C37 /* XYLoggedInNavigationViewController.m in Sources */,
+				80F29B8B19B4BAEE003138B7 /* MBProgressHUD.m in Sources */,
+				8081AE9519012C7A0095456E /* XYEnsembleProfileHeader.m in Sources */,
+				7B79FFA5191B912500B9C3F9 /* XYLeftMenuTableViewCell.m in Sources */,
+				8055B37218C479EE0095F4DE /* XYEnterCodeViewController.m in Sources */,
+				80123F8718D1F9460033E5B4 /* XYAPIClient.m in Sources */,
+				80D7FF1219459C63006C0979 /* XYBaseRightArrowButton.m in Sources */,
+				80172B7F19ACAE7B00576386 /* XYEnsembleType.m in Sources */,
+				80F29B8719B4A635003138B7 /* XYTasksButton.m in Sources */,
+				80DF4B1819B74D83003700AE /* XYTaskDescriptionCell.m in Sources */,
+				80CBC20118D7140C00D43A93 /* XYErrorService.m in Sources */,
+				8055B3A318C721C00095F4DE /* XYTextField.m in Sources */,
+				80AB732918BB49EB00CC2B39 /* main.m in Sources */,
+				8062E74B18DAE0ED004E5A76 /* XYEnsembleSelectionButton.m in Sources */,
+				8080422C190E3ADD006A4378 /* XYOrganizationService.m in Sources */,
+				80476667191A67B300A13859 /* XYUser+UserFunctions.m in Sources */,
+				80DF4B1C19B84E0F003700AE /* XYNavigationBarBackButton.m in Sources */,
+				80AB736518BB62CD00CC2B39 /* Xylo.xcdatamodeld in Sources */,
+				7BAEE9371938BABB004C7297 /* XYPasswordResetViewController.m in Sources */,
+				80123F8118D1AB2C0033E5B4 /* XYUtils.m in Sources */,
+				80172B9D19B0B5FB00576386 /* XYTaskHeaderView.m in Sources */,
+				80C52139195D85A60062E1A9 /* XYLoginViewController.m in Sources */,
+				80AB736B18BB639A00CC2B39 /* XYBaseViewController.m in Sources */,
+				80172B8219ACAE7B00576386 /* XYUser.m in Sources */,
+				80123F8F18D339560033E5B4 /* JSONResponseSerializerWithData.m in Sources */,
+				80172B8519ACAE7B00576386 /* XYOrganization.m in Sources */,
+				7BAEE93A1938C7B5004C7297 /* UIView+viewRecursion.m in Sources */,
+				80123F8418D1D4E90033E5B4 /* XYVerificationTextField.m in Sources */,
+				80804242190E8575006A4378 /* NSDictionary+NullConverver.m in Sources */,
+				805E681B19541E51009B0AE9 /* XYInstrumentType+InstrumentTypeFunctions.m in Sources */,
+				802EB56818FD620F000F0701 /* XYPendingContactCell.m in Sources */,
+				8080422F190E7823006A4378 /* XYOrganization+OrganizationFunctions.m in Sources */,
+				80BF5F73196422D30036F300 /* XYOrganizationsListModel.m in Sources */,
+				80172B9A19B096FC00576386 /* XYTask.m in Sources */,
+				8055B38D18C47BB10095F4DE /* XYPersonalInformationViewController.m in Sources */,
+				80DF4B2319B85ACF003700AE /* XYNavigationBarEditButton.m in Sources */,
+				7B8AC06A18F5373500BBA5C9 /* XYLeftMenuViewController.m in Sources */,
+				7B435CD21963F88D00DA0467 /* XYBaseLoggedInViewController.m in Sources */,
+				80E2DC2D18BDDFF000640A3D /* XYGoogleAnalyticsService.m in Sources */,
+				80172B9419ACB0DC00576386 /* XYTask+TaskFunctions.m in Sources */,
+				80F29B8F19B60560003138B7 /* XYTaskViewController.m in Sources */,
+				8075B68D18F5604C00238645 /* XYOrganizationEnsembleCell.m in Sources */,
+				80172B8819ACAE7B00576386 /* XYEnsemble.m in Sources */,
+				802EB56318FD258D000F0701 /* XYOrganizationSocialCell.m in Sources */,
+				80D7FF1319459C63006C0979 /* XYPositionButton.m in Sources */,
+				80172B7519AC800C00576386 /* XYTaskListCell.m in Sources */,
+				8055B38218C47AAC0095F4DE /* XYConfirmOrganizationViewController.m in Sources */,
+				80172B8B19ACAE7B00576386 /* XYInstrumentType.m in Sources */,
+				80172B7019AC7C3700576386 /* XYTaskListViewController.m in Sources */,
+				8075B68818F54E2B00238645 /* XYOrganizationContactInfoCell.m in Sources */,
+				8065FD2518E428CA00659840 /* XYEnsembleSelectionScrollView.m in Sources */,
+				80F29B9419B607A6003138B7 /* XYTaskDefaultCell.m in Sources */,
+				80172B7C19ACA8B600576386 /* XYTaskService.m in Sources */,
+				805E681E19547B08009B0AE9 /* XYInstrumentTypeButton.m in Sources */,
+				802EB56D18FD7D1E000F0701 /* XYOrganizationMemberCell.m in Sources */,
+				7B0138A518C4C4D4009D4FC0 /* XYRegistrationNextButton.m in Sources */,
+				8073EBFA1920BBE900A4AF3F /* XYEnsembleService.m in Sources */,
+				7B8AC06418F536A100BBA5C9 /* XYRootViewController.m in Sources */,
+				80AB736818BB630B00CC2B39 /* XYLoginService.m in Sources */,
+				7B8AC07018F53A7500BBA5C9 /* XYActivityFeedViewController.m in Sources */,
+				80AB732D18BB49EB00CC2B39 /* XYAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AB733618BB49EC00CC2B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AB734818BB49EC00CC2B39 /* xyloTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80AB734018BB49EC00CC2B39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80AB731818BB49EB00CC2B39 /* xylo */;
+			targetProxy = 80AB733F18BB49EC00CC2B39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80AB732518BB49EB00CC2B39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80AB732618BB49EB00CC2B39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80AB734418BB49EC00CC2B39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80AB734518BB49EC00CC2B39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80AB734918BB49EC00CC2B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80AB734A18BB49EC00CC2B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80AB734C18BB49EC00CC2B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4CDD247C76845D4B748356F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xylo/xylo-Prefix.pch";
+				INFOPLIST_FILE = "xylo/xylo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/xylo/3rd\\ party\\ classes/GoogleAnalytics",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80AB734D18BB49EC00CC2B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4CDD247C76845D4B748356F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xylo/xylo-Prefix.pch";
+				INFOPLIST_FILE = "xylo/xylo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/xylo/3rd\\ party\\ classes/GoogleAnalytics",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		80AB734F18BB49EC00CC2B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xylo.app/xylo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xylo/xylo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "xyloTests/xyloTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		80AB735018BB49EC00CC2B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xylo.app/xylo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xylo/xylo-Prefix.pch";
+				INFOPLIST_FILE = "xyloTests/xyloTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80AB731418BB49EB00CC2B39 /* Build configuration list for PBXProject "xylo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AB734918BB49EC00CC2B39 /* Debug */,
+				80AB734A18BB49EC00CC2B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80AB734B18BB49EC00CC2B39 /* Build configuration list for PBXNativeTarget "xylo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AB734C18BB49EC00CC2B39 /* Debug */,
+				80AB734D18BB49EC00CC2B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80AB734E18BB49EC00CC2B39 /* Build configuration list for PBXNativeTarget "xyloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AB734F18BB49EC00CC2B39 /* Debug */,
+				80AB735018BB49EC00CC2B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80AB736318BB62CD00CC2B39 /* Xylo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80AB736418BB62CD00CC2B39 /* Xylo.xcdatamodel */,
+			);
+			currentVersion = 80AB736418BB62CD00CC2B39 /* Xylo.xcdatamodel */;
+			path = Xylo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80AB731118BB49EB00CC2B39 /* Project object */;
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XYTaskListCellID" id="KGk-i7-Jjw" customClass="XYTaskListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khX-q5-d3E">
+                        <rect key="frame" x="70" y="11" width="202" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="uw5-1Q-vvb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.082352941176470587" green="0.11372549019607843" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaI-gT-pT9">
+                        <rect key="frame" x="70" y="29" width="27" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="190" id="xtW-Gm-ggT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.52156862749999999" green="0.63137254899999995" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpp-Pq-6eG" customClass="XYTasksButton">
+                        <rect key="frame" x="4" y="13" width="30" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="5Ux-r1-f3n"/>
+                            <constraint firstAttribute="width" constant="30" id="PCS-Cs-W6a"/>
+                        </constraints>
+                        <state key="normal" image="TaskBoxUnchecked">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE2-qP-Pin" customClass="XYTasksButton">
+                        <rect key="frame" x="280" y="8" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Fas-YZ-tBW"/>
+                            <constraint firstAttribute="width" constant="40" id="ZIe-Le-UYI"/>
+                        </constraints>
+                        <state key="normal" image="TaskCellFavoriteIconUnmarked">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Npl-Rl-Hok">
+                        <rect key="frame" x="40" y="19" width="19" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="L0C-sF-KB3"/>
+                            <constraint firstAttribute="width" constant="19" id="cv1-i6-EhK"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TaskCellReloadIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gEl-rR-yu3">
+                        <rect key="frame" x="105" y="33" width="11" height="10"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="11" id="G3U-DQ-HjB"/>
+                            <constraint firstAttribute="height" constant="10" id="WqR-Go-ly5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QE2-qP-Pin" firstAttribute="leading" secondItem="khX-q5-d3E" secondAttribute="trailing" constant="8" id="6CJ-bY-Vjh"/>
+                    <constraint firstAttribute="centerY" secondItem="jpp-Pq-6eG" secondAttribute="centerY" id="E2B-NE-UJT"/>
+                    <constraint firstItem="Npl-Rl-Hok" firstAttribute="leading" secondItem="jpp-Pq-6eG" secondAttribute="trailing" constant="6" id="FYI-cj-tQq"/>
+                    <constraint firstAttribute="centerY" secondItem="Npl-Rl-Hok" secondAttribute="centerY" id="MiX-w3-M6m"/>
+                    <constraint firstItem="khX-q5-d3E" firstAttribute="leading" secondItem="Npl-Rl-Hok" secondAttribute="trailing" constant="11" id="Ofp-bI-RxF"/>
+                    <constraint firstItem="jpp-Pq-6eG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="PUo-xT-lia"/>
+                    <constraint firstAttribute="trailing" secondItem="QE2-qP-Pin" secondAttribute="trailing" id="QhH-4o-qP0"/>
+                    <constraint firstItem="gEl-rR-yu3" firstAttribute="leading" secondItem="gaI-gT-pT9" secondAttribute="trailing" constant="8" id="a5g-p3-hvl"/>
+                    <constraint firstItem="gEl-rR-yu3" firstAttribute="top" secondItem="khX-q5-d3E" secondAttribute="bottom" constant="4" id="aeA-GH-IXk"/>
+                    <constraint firstAttribute="centerY" secondItem="QE2-qP-Pin" secondAttribute="centerY" id="g2Y-G0-rMi"/>
+                    <constraint firstItem="gaI-gT-pT9" firstAttribute="leading" secondItem="Npl-Rl-Hok" secondAttribute="trailing" constant="11" id="mHj-st-zbC"/>
+                    <constraint firstItem="gaI-gT-pT9" firstAttribute="top" secondItem="khX-q5-d3E" secondAttribute="bottom" id="p10-mH-30X"/>
+                    <constraint firstItem="khX-q5-d3E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="ylm-NL-eE8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkboxButton" destination="jpp-Pq-6eG" id="UK4-wM-XvE"/>
+                <outlet property="dayLabel" destination="gaI-gT-pT9" id="Xrv-Gy-MZM"/>
+                <outlet property="descriptionLabel" destination="khX-q5-d3E" id="nEO-ag-Tqj"/>
+                <outlet property="favoriteButton" destination="QE2-qP-Pin" id="pql-KO-UNw"/>
+                <outlet property="recuringImageView" destination="gEl-rR-yu3" id="PaP-wN-Res"/>
+                <outlet property="userImageView" destination="Npl-Rl-Hok" id="dvo-Di-L0b"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TaskBoxUnchecked" width="18" height="18"/>
+        <image name="TaskCellFavoriteIconUnmarked" width="16" height="16"/>
+        <image name="TaskCellReloadIcon" width="11" height="10"/>
+    </resources>
+</document>

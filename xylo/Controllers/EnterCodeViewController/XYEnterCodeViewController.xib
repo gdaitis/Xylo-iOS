@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYEnterCodeViewController">
+            <connections>
+                <outlet property="bottomButton" destination="rgk-4p-k4j" id="EiT-ff-pp9"/>
+                <outlet property="bottomButtonYConstraint" destination="cNc-0S-LD8" id="acD-IG-fj3"/>
+                <outlet property="bottomImageView" destination="iiJ-ku-urw" id="Kd6-2o-JLj"/>
+                <outlet property="nextButton" destination="0Js-ef-f9c" id="daE-LK-s0W"/>
+                <outlet property="nextButtonXConstraint" destination="Yhm-mD-RDB" id="H9Z-b7-zpf"/>
+                <outlet property="nextButtonYConstraint" destination="oPX-lg-7nl" id="Snc-dt-hF1"/>
+                <outlet property="secondTextField" destination="hwy-tL-EqY" id="cdq-tO-vni"/>
+                <outlet property="secondTextFieldYConstraint" destination="xOM-05-VKE" id="Sf4-cG-VFV"/>
+                <outlet property="topConstraint" destination="EwH-ry-vw2" id="suw-mI-V3a"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="xyloLogoImageView" destination="XmN-Ad-dON" id="dmn-so-cBU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xyloBetaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XmN-Ad-dON">
+                    <rect key="frame" x="102" y="131" width="132" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="Nir-0j-0ez"/>
+                        <constraint firstAttribute="width" constant="132" id="r8Y-VC-vXl"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Js-ef-f9c" customClass="XYRegistrationNextButton">
+                    <rect key="frame" x="124" y="314" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="LBc-Do-pZN"/>
+                        <constraint firstAttribute="width" constant="72" id="sZc-TZ-e9D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonPressedFromEnterCodeStage" destination="-1" eventType="touchUpInside" id="h7v-kI-L3f"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registrationFooter" translatesAutoresizingMaskIntoConstraints="NO" id="iiJ-ku-urw">
+                    <rect key="frame" x="0.0" y="385" width="320" height="87"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwy-tL-EqY" customClass="XYTextField">
+                    <rect key="frame" x="60" y="245" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ApK-mG-sTf"/>
+                        <constraint firstAttribute="width" constant="200" id="ajv-t4-bCM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgk-4p-k4j">
+                    <rect key="frame" x="0.0" y="472" width="320" height="96"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="J0Y-HC-dFv"/>
+                        <constraint firstAttribute="width" constant="320" id="NXB-Hk-1Lk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonPressed" destination="-1" eventType="touchUpInside" id="Frv-QB-vtA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.2006378546" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="iiJ-ku-urw" secondAttribute="centerX" id="6GX-ov-s3X"/>
+                <constraint firstItem="XmN-Ad-dON" firstAttribute="top" secondItem="1" secondAttribute="top" constant="131" id="EwH-ry-vw2"/>
+                <constraint firstAttribute="centerX" secondItem="hwy-tL-EqY" secondAttribute="centerX" id="G27-Yh-U7I"/>
+                <constraint firstAttribute="centerX" secondItem="rgk-4p-k4j" secondAttribute="centerX" id="WrC-No-QbC"/>
+                <constraint firstAttribute="centerX" secondItem="0Js-ef-f9c" secondAttribute="centerX" id="Yhm-mD-RDB"/>
+                <constraint firstAttribute="bottom" secondItem="rgk-4p-k4j" secondAttribute="bottom" id="cNc-0S-LD8"/>
+                <constraint firstItem="rgk-4p-k4j" firstAttribute="top" secondItem="iiJ-ku-urw" secondAttribute="bottom" id="krv-gP-a7p"/>
+                <constraint firstItem="0Js-ef-f9c" firstAttribute="top" secondItem="hwy-tL-EqY" secondAttribute="bottom" constant="29" id="oPX-lg-7nl"/>
+                <constraint firstItem="XmN-Ad-dON" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="102" id="svI-xg-z9a"/>
+                <constraint firstItem="hwy-tL-EqY" firstAttribute="top" secondItem="XmN-Ad-dON" secondAttribute="bottom" constant="51" id="xOM-05-VKE"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="registrationFooter" width="320" height="87"/>
+        <image name="xyloBetaLogo" width="132" height="63"/>
+    </resources>
+</document>

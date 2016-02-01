@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EB90D8D0-D833-4F20-BC20-D1F948A5CB2D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>xylo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACC7CE9F-3C8C-43EA-A429-2685A4D63F20</key>
+		<string>https://github.com/Seriously/Xylo-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xylo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACC7CE9F-3C8C-43EA-A429-2685A4D63F20</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Seriously/Xylo-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACC7CE9F-3C8C-43EA-A429-2685A4D63F20</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACC7CE9F-3C8C-43EA-A429-2685A4D63F20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Xylo-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

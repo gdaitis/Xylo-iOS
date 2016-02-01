@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="XYTaskDefaultCellID" id="KGk-i7-Jjw" customClass="XYTaskDefaultCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLC-7M-U48">
+                        <rect key="frame" x="47" y="11" width="80" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="MIQ-3n-EgM"/>
+                            <constraint firstAttribute="height" constant="21" id="xf7-1I-Otl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-af-lew">
+                        <rect key="frame" x="131" y="11" width="150" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="EfV-Vs-bUH"/>
+                            <constraint firstAttribute="height" constant="21" id="R40-mf-p0d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="omf-e7-NdM">
+                        <rect key="frame" x="14" y="9" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="6PA-rv-kMk"/>
+                            <constraint firstAttribute="width" constant="25" id="sXK-j7-UB3"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HbB-bJ-hBL">
+                        <rect key="frame" x="285" y="9" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="LBW-dB-DzG"/>
+                            <constraint firstAttribute="height" constant="25" id="uCY-4b-dtE"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="omf-e7-NdM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="1AI-Jh-eew"/>
+                    <constraint firstItem="ooE-af-lew" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="QHY-Y6-W57"/>
+                    <constraint firstItem="ooE-af-lew" firstAttribute="leading" secondItem="CLC-7M-U48" secondAttribute="trailing" constant="4" id="TqF-a8-6W4"/>
+                    <constraint firstAttribute="trailing" secondItem="HbB-bJ-hBL" secondAttribute="trailing" constant="10" id="cVf-0F-UeH"/>
+                    <constraint firstItem="omf-e7-NdM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="jVd-Bp-q5w"/>
+                    <constraint firstItem="CLC-7M-U48" firstAttribute="leading" secondItem="omf-e7-NdM" secondAttribute="trailing" constant="8" id="rVs-E5-jTr"/>
+                    <constraint firstAttribute="bottom" secondItem="HbB-bJ-hBL" secondAttribute="bottom" constant="9" id="vef-op-esj"/>
+                    <constraint firstItem="CLC-7M-U48" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="vvm-gk-ffV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="omf-e7-NdM" id="oq7-Sh-6wW"/>
+                <outlet property="leftLabel" destination="CLC-7M-U48" id="rSc-Ta-B6t"/>
+                <outlet property="rightImageView" destination="HbB-bJ-hBL" id="xXT-FU-e1F"/>
+                <outlet property="rightLabel" destination="ooE-af-lew" id="970-R2-H1A"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

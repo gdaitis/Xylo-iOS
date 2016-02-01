@@ -1,0 +1,10 @@
+platform :ios, '7.0'
+xcodeproj 'xylo.xcodeproj'
+
+pod 'AFNetworking', '2.2'
+pod 'MagicalRecord', '~> 2.2'
+pod 'Facebook-iOS-SDK', '~> 3.12.0'
+pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.3'
+pod 'MMDrawerController', '~> 0.5.3'
+pod 'UIView+AutoLayout'
+pod 'SSKeychain', '~> 1.2'
